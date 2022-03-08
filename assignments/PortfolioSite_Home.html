@@ -2,20 +2,23 @@
 <html lang="en-US">
   <head>
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../css/myfirstexternal.css">
 
     <style>
     .image {
       box-shadow: 5px 5px 20px 1px;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
+      margin: auto;
     }
 
     .gallery_pages {
       padding: 0px;
     }
-    .selected {
+
+    .image_grid {
+      padding: 10px;
+    }
+
+    #selected {
       display: inline-block;
       color: rgba(0, 153, 153, 1);
       background-color: #232328;
@@ -25,7 +28,8 @@
       margin: 50px;
       list-style: outside none none;
     }
-    li {
+
+    .page_list {
       display: inline-block;
       font-size: 24px;
       color: white;
@@ -35,68 +39,81 @@
       list-style: outside none none;
     }
 
-    #nav_bar {
-      text-align: center;
-      background: #232328;
-      width: 2032px;
-      height: 50px;
-      padding: 10px;
+    .grid_image {
+      display: inline-block;
+      width: auto;
+      margin: 50px;
+      list-style: outside none none;
     }
+
+    main {
+      font-family: times;
+    }
+
+    header {
+      font-family: times;
+    }
+
     </style>
 
   </head>
   <body>
 
     <!-- Portfolio title -->
-    <h1 id="nav_bar"
-    style="
-    color: #ffcc00;
-    font-size: 32px;
-    ">
-      Gemini Artworks
-    </h1>
+    <header>
+      <h1
+      id="nav_bar"
+      style="
+      color: #ffcc00;
+      font-size: 32px;
+      font-weight: 400;
+      text-align: center;
+      background: #232328;
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 99%;
+      height: 50px;
+      padding: 10px;
+      ">
+        Gemini Artworks
+      </h1>
+    </header>
 
-    <div
-    style="
-    width: 145px;
-    margin: auto;
-    ">
-      <header>
-            <img src="Gemini_Artworks_Icon2.png"
-            alt="logo"
-            style="
-            margin: auto;
-            height: 400px;
-            width: 400px;
-            padding: 30px;
-            ">
-      </header>
+    <main>
+      <section>
+      <!-- Logo -->
+      <img src="../images/Gemini_Artworks_Icon2.png" alt="Gemini Artworks Logo"
+      style="
+      height: 400px;
+      display: block;
+      margin: auto;
+      ">
 
-    </div>
-        <div>
-          <h3 style="text-align: center;">
-            Hey, my name is Johnathan Gonzalez
-          </h3>
+      <div>
+        <h2 style="text-align: center;">
+          Hey, my name is Johnathan Gonzalez
+        </h2>
 
-          <p class="card" style="
-          padding: 40px;
-          text-align: center;
-          color: white;
-          font-size: 14px;
-          ">
-            I am a newly introduced graphic designer with a good amount of experience
-            in fine arts and digital art. As of now, I have found interest in more than one
-            type of art, but most of my work comes from the digital technique as I explore
-            the world of astrology as the main theme for my services.
-          </p>
-        </div>
+        <p id="card" style="
+        padding: 40px;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        font-family: helveticaneue;
+        ">
+          I am a newly introduced graphic designer with a good amount of experience
+          in fine arts and digital art. As of now, I have found interest in more than one
+          type of art, but most of my work comes from the digital technique as I explore
+          the world of astrology as the main theme for my services.
+        </p>
+      </div>
 
       <hr>
 
       <br>
-      <div style="text-align: center; font-size: 20px;">
+      <h2 style="text-align: center;">
         Work Examples
-      </div>
+      </h2>
       <br>
 
       <div style="
@@ -106,43 +123,50 @@
       ">
 
         <ul class="gallery_pages">
-          <li class="selected">Zodiac Project</li>
-          <li>Illustrator</li>
-          <li>Photoshop</li>
-          <li>InDesign</li>
+          <li class="page_list" id="selected">Zodiac Project</li>
+          <li class="page_list">Illustrator</li>
+          <li class="page_list">Photoshop</li>
+          <li class="page_list">InDesign</li>
         </ul>
 
-        <img class="image" style="
-        margin: 20px;
-        height: 400px"
-        src="../images/Pisces.jpg" alt="Pisces Art">
+        <ul class="image_grid">
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="../images/Pisces.jpg" alt="Pisces Art">
+          </li>
 
-        <img class="image" style="
-        margin: 20px;
-        height: 400px"
-        src="../images/Aries.jpg" alt="Leo Art">
-        <br>
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="../images/Aries.jpg" alt="Aries Art">
+          </li>
 
-        <img class="image" style="
-        margin: 20px;
-        height: 400px"
-        src="../images/Taurus.jpg" alt="Cancer Art">
-        <br>
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="../images/Taurus.jpg" alt="Taurus Art">
+          </li>
 
-        <img class="image" style="
-        margin: 20px;
-        height: 400px"
-        src="../images/Gemini.jpg" alt="Pisces Art">
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="../images/Gemini.jpg" alt="Gemini Art">
+          </li>
 
-        <img class="image" style="
-        margin: 20px;
-        height: 400px"
-        src="../images/Cancer.jpg" alt="Pisces Art">
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="../images/Cancer.jpg" alt="Cancer Art">
+          </li>
 
-        <img class="image" style="
-        margin: 20px;
-        height: 400px"
-        src="../images/Leo.jpg" alt="Pisces Art">
-      </div>
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="../images/Leo.jpg" alt="Leo Art">
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
