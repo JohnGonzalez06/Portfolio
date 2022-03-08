@@ -2,10 +2,45 @@
 <html lang="en-US">
   <head>
     <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/myfirstexternal.css">
 
     <style>
     .image {
-      box-shadow: 5px 5px 20px 1px
+      box-shadow: 5px 5px 20px 1px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .gallery_pages {
+      padding: 0px;
+    }
+    .selected {
+      display: inline-block;
+      color: rgba(0, 153, 153, 1);
+      background-color: #232328;
+      border: 1px solid; padding: 10px;
+      font-size: 24px;
+      width: auto;
+      margin: 50px;
+      list-style: outside none none;
+    }
+    li {
+      display: inline-block;
+      font-size: 24px;
+      color: white;
+      background-color: #232328;
+      width: auto;
+      margin: 50px;
+      list-style: outside none none;
+    }
+
+    #nav_bar {
+      text-align: center;
+      background: #232328;
+      width: 2032px;
+      height: 50px;
+      padding: 10px;
     }
     </style>
 
@@ -13,28 +48,38 @@
   <body>
 
     <!-- Portfolio title -->
+    <h1 id="nav_bar"
+    style="
+    color: #ffcc00;
+    font-size: 32px;
+    ">
+      Gemini Artworks
+    </h1>
+
     <div
     style="
     width: 145px;
     margin: auto;
     ">
-      <header class="container">
+      <header>
             <img src="Gemini_Artworks_Icon2.png"
             alt="logo"
             style="
-            width: 150px;
+            margin: auto;
+            height: 400px;
+            width: 400px;
+            padding: 30px;
             ">
       </header>
+
     </div>
-        <div class="row">
+        <div>
           <h3 style="text-align: center;">
             Hey, my name is Johnathan Gonzalez
           </h3>
 
-          <p style="
-          background-color: #232328;
+          <p class="card" style="
           padding: 40px;
-          margin: 10px;
           text-align: center;
           color: white;
           font-size: 14px;
@@ -48,8 +93,9 @@
 
       <hr>
 
-      <div style="text-align: center;">
-        <i>Work Examples</i>
+      <br>
+      <div style="text-align: center; font-size: 20px;">
+        Work Examples
       </div>
       <br>
 
@@ -58,22 +104,45 @@
       background-color: #232328;
       text-align: center;
       ">
-        <img class="image" style="
-        margin: 20px;
-        height: 400px"
-        src="../images/Leo.jpg" alt="Leo Art">
-        <br>
 
-        <img class="image" style="
-        margin: auto;
-        height: 260px"
-        src="../images/Cancer_copy.jpg" alt="Cancer Art">
-        <br>
+        <ul class="gallery_pages">
+          <li class="selected">Zodiac Project</li>
+          <li>Illustrator</li>
+          <li>Photoshop</li>
+          <li>InDesign</li>
+        </ul>
 
         <img class="image" style="
         margin: 20px;
         height: 400px"
-        src="../images/Pisces_copy.jpg" alt="Pisces Art">
+        src="../images/Pisces.jpg" alt="Pisces Art">
+
+        <img class="image" style="
+        margin: 20px;
+        height: 400px"
+        src="../images/Aries.jpg" alt="Leo Art">
+        <br>
+
+        <img class="image" style="
+        margin: 20px;
+        height: 400px"
+        src="../images/Taurus.jpg" alt="Cancer Art">
+        <br>
+
+        <img class="image" style="
+        margin: 20px;
+        height: 400px"
+        src="../images/Gemini.jpg" alt="Pisces Art">
+
+        <img class="image" style="
+        margin: 20px;
+        height: 400px"
+        src="../images/Cancer.jpg" alt="Pisces Art">
+
+        <img class="image" style="
+        margin: 20px;
+        height: 400px"
+        src="../images/Leo.jpg" alt="Pisces Art">
       </div>
   </body>
 </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Semantic Layout Example</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      header {
+        background: #232328;
+      }
+
+      #nav {
+        background: #525e73;
+      }
+
+      #article {
+        color: white;
+        background: grey;
+        display: inline-block;
+        padding: 24px;
+        width: 52%;
+      }
+
+      section {
+        background: rgba(0, 40, 200, 0.4);
+        padding: 10px;
+      }
+
+      #sidebar {
+        background: skyblue;
+        display: inline-block;
+        width: 39%;
+      }
+
+      #footer {
+        background: lightgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="color: white;">
+      HEADER
+    </header>
+    <nav id="nav" style="color: white;">
+      Navigation Bar
+    </nav>
+    <main>
+      <article id="article">
+        <h1>Gemini Compatibility</h1>
+        <hr>
+        <section>
+          <p style="
+          font-weight: 700;
+          font-size: 20px;
+          ">
+            Aquarius
+          </p>
+          <p>Best friend material</p>
+        </section>
+        <hr>
+        <section>
+          <p style="
+          font-weight: 700;
+          font-size: 20px;
+          ">
+            Leo
+          </p>
+          <p>Sophisticated conversations</p>
+        </section>
+        <hr>
+      </article>
+      <aside id="sidebar">SIDEBAR</aside>
+    </main>
+    <footer id="footer">Footer</footer>
+  </body>
+</html>
