@@ -1,19 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <title>HELLO WORLD</title>
+    <title>Portfolio</title>
+
+    <style>
+      .image {
+        box-shadow: 5px 5px 20px 1px;
+        display: block;
+        margin: auto;
+      }
+
+      .gallery_pages {
+        padding: 0px;
+      }
+
+      .image_grid {
+        padding: 10px;
+      }
+
+      #selected {
+        display: inline-block;
+        color: rgba(0, 153, 153, 1);
+        background-color: #232328;
+        border: 1px solid; padding: 10px;
+        font-size: 24px;
+        width: auto;
+        margin: 50px;
+        list-style: outside none none;
+      }
+
+      .left_link {
+        list-style-type: none;
+      }
+
+      #logo {
+        color: #ffcc00;
+        position: absolute;
+        display: block;
+      }
+
+      .right_link {
+        list-style-type: none;
+        float: right;
+      }
+
+      .page_list {
+        display: inline-block;
+        font-size: 24px;
+        color: white;
+        background-color: #232328;
+        width: auto;
+        margin: 50px;
+        list-style: outside none none;
+      }
+
+      .grid_image {
+        display: inline-block;
+        width: auto;
+        margin: 50px;
+        list-style: outside none none;
+      }
+
+      #I_Block {
+        background: #232328;
+        box-shadow: 0px 5px 0px 0px rgba(0, 153, 153, 1);
+      }
+
+      #nav_bar ul {
+        color: white;
+        background: #232328;
+        box-shadow: 0px 5px 0px 0px rgba(153, 51, 153, 1);
+        padding-inline-start: 0px;
+      }
+
+      #nav_bar ul li {
+        display: inline-block;
+        padding: 12px 24px;
+      }
+
+      main {
+        font-family: times;
+      }
+
+      header {
+        font-family: times;
+      }
+
+      body {
+        background-image: url('Space_Background.jpg');
+        background-size: contain;
+      }
+    </style>
+
   </head>
   <body>
-    <h1>This is a basic "Hello World" template for an HTML file.</h1>
-      <p>This is a P tag</p>
-      <ul>
 
-        <li><a href="headings.html">Headings</a>
+    <!-- Portfolio title -->
+    <header>
+        <nav id="nav_bar">
+            <ul>
+              <li class="left_link">Home</li>
+              <li class="left_link">Gallery</li>
+              <li id="logo">
+                Gemini Artworks
+              </li>
+              <li class="right_link">About Me</li>
+              <li class="right_link">Contact</li>
+            </ul>
+        </nav>
+    </header>
 
-        <li><a href="textstylingtags.html">Text Style Tags</a>
+    <main>
+      <section>
+        <br><br><br>
+      <!-- Logo -->
+      <img src="../images/Gemini_Artworks_Icon2.png" alt="Gemini Artworks Logo"
+      style="
+      height: 400px;
+      display: block;
+      margin: auto;
+      ">
+      <br><br><br>
 
-        <li><a href="imagetags.html">Image Tags</a>
+      <div id="I_Block">
+        <h1 style="
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-family: times;
+        ">
+          Hey, John here!
+        </h1>
 
-      </ul>
+        <p style="
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        font-family: helveticaneue;
+        ">
+          I am a newly introduced graphic designer with a good amount of experience
+          in fine arts and digital art. As of now, I have found interest in more than one
+          type of art, but most of my work comes from the digital technique as I explore
+          the world of astrology as the main theme for my services.
+        </p>
+      </div>
+
+      <br>
+      <h2 style="text-align: center; color: white;">
+        Work Examples
+      </h2>
+      <br>
+
+      <div style="
+      border: 2px solid #ffcc00;
+      background-color: #232328;
+      text-align: center;
+      ">
+
+        <ul class="gallery_pages">
+          <li class="page_list" id="selected">Zodiac Project</li>
+          <li class="page_list">Illustrator</li>
+          <li class="page_list">Photoshop</li>
+          <li class="page_list">InDesign</li>
+        </ul>
+
+        <ul class="image_grid">
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="../images/Pisces.jpg" alt="Pisces Art">
+          </li>
+
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="../images/Aries.jpg" alt="Aries Art">
+          </li>
+
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="../images/Taurus.jpg" alt="Taurus Art">
+          </li>
+
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="../images/Gemini.jpg" alt="Gemini Art">
+          </li>
+
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="../images/Cancer.jpg" alt="Cancer Art">
+          </li>
+
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="../images/Leo.jpg" alt="Leo Art">
+          </li>
+
+        </ul>
+
+      </section>
+    </main>
   </body>
 </html>

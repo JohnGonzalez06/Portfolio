@@ -1,0 +1,32 @@
+.Navigation {
+    background: #232328;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.Navigation ul li:hover {
+    background: white;
+    color: black;
+}
+
+.Navigation ul li:active {
+    background: gold;
+}
+
+.Navigation ul li a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.Navigation ul li {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-left: 0px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#Contact {
+  float: right;
+}
