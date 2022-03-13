@@ -61,6 +61,10 @@
         list-style: outside none none;
       }
 
+      #current {
+        color: #ffcc00;
+      }
+
       #I_Block {
         background: #232328;
         box-shadow: 0px 5px 0px 0px rgba(0, 153, 153, 1);
@@ -99,13 +103,20 @@
     <header>
         <nav id="nav_bar">
             <ul>
-              <li class="left_link">Home</li>
-              <li class="left_link">Gallery</li>
+              <li class="left_link" id="current">Home</li>
               <li id="logo">
                 Gemini Artworks
               </li>
-              <li class="right_link">About Me</li>
-              <li class="right_link">Contact</li>
+              <li class="right_link">
+                <a href="About_Me.html" style="text-decoration: none; color: white;">
+                About Me
+                </a>
+              </li>
+              <li class="right_link">
+                <a href="Contact_Page.html" style="text-decoration: none; color: white;">
+                Contact
+                </a>
+              </li>
             </ul>
         </nav>
     </header>
@@ -114,7 +125,7 @@
       <section>
         <br><br><br>
       <!-- Logo -->
-      <img src="../images/Gemini_Artworks_Icon2.png" alt="Gemini Artworks Logo"
+      <img src="Gemini_Artworks_Icon2.png" alt="Gemini Artworks Logo"
       style="
       height: 400px;
       display: block;
@@ -165,46 +176,64 @@
 
         <ul class="gallery_pages">
           <li class="page_list" id="selected">Zodiac Project</li>
-          <li class="page_list">Illustrator</li>
-          <li class="page_list">Photoshop</li>
-          <li class="page_list">InDesign</li>
+          <li class="page_list">
+            <a href="HomeIllustrator.html" style="text-decoration: none; color: white;">
+            Illustrator
+            </a>
+          </li>
+          <li class="page_list">
+            <a href="HomePhotoshop.html" style="text-decoration: none; color: white;">
+            Photoshop
+            </a>
+          </li>
+          <li class="page_list">
+            <a href="HomeIndesign.html" style="text-decoration: none; color: white;">
+            InDesign
+            </a>
+          </li>
         </ul>
 
         <ul class="image_grid">
           <li class="grid_image">
             <img class="image" style="
             height: 400px"
-            src="../images/Pisces.jpg" alt="Pisces Art">
+            src="images/Pisces.jpg" alt="Pisces Art">
           </li>
 
           <li class="grid_image">
             <img class="image" style="
             height: 400px"
-            src="../images/Aries.jpg" alt="Aries Art">
+            src="images/Aries.jpg" alt="Aries Art">
           </li>
 
           <li class="grid_image">
             <img class="image" style="
             height: 400px"
-            src="../images/Taurus.jpg" alt="Taurus Art">
+            src="images/Taurus.jpg" alt="Taurus Art">
           </li>
 
           <li class="grid_image">
             <img class="image" style="
             height: 400px"
-            src="../images/Gemini.jpg" alt="Gemini Art">
+            src="images/Gemini.jpg" alt="Gemini Art">
           </li>
 
           <li class="grid_image">
             <img class="image" style="
             height: 400px"
-            src="../images/Cancer.jpg" alt="Cancer Art">
+            src="images/Cancer.jpg" alt="Cancer Art">
           </li>
 
           <li class="grid_image">
             <img class="image" style="
             height: 400px"
-            src="../images/Leo.jpg" alt="Leo Art">
+            src="images/Leo.jpg" alt="Leo Art">
+          </li>
+
+          <li class="grid_image">
+            <img class="image" style="
+            height: 400px"
+            src="images/Virgo.jpg" alt="Leo Art">
           </li>
 
         </ul>
