@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>HTML Tables Examples</title>
+    <style>
+      #uglytable,
+      #uglytable caption,
+      #uglytable th,
+      #uglytable td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+      #uglytable {
+        margin: auto;
+      }
+      #uglyheader {
+        background: teal;
+        color: white;
+      }
+      #uglytablecol {
+        background-color: turquoise;
+      }
+      #prettytable,
+      #prettytable caption,
+      #prettytable th,
+      #prettytable td {
+        border-collapse: collapse;
+        padding: 5px;
+      }
+      #prettytable {
+        margin: auto;
+      }
+      #prettyheader th {
+        border: 1px solid black;
+      }
+      #prettytable tr:nth-child(even) {
+        background-color: lightgrey;
+      }
+      #prettytable tr:hover {
+        background-color: skyblue;
+      }
+      #good {
+        background-color: rgba(0, 155, 20, 0.5);
+      }
+      #bad {
+        background-color: rgba(255, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+
+  <body>
+    <table id="uglytable">
+      <caption>This is an ugly table</caption>
+      <colgroup>
+        <col id="uglytablecol" span="2">
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+        <tr id="uglyheader">
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Favorite color</th>
+          <th>Music Genre</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>Green</td>
+          <td>Pop</td>
+        </tr>
+        <tr>
+          <td>Sasha</td>
+          <td>Williams</td>
+          <td>Purple</td>
+          <td>Soft Rock</td>
+        </tr>
+        <tr>
+          <td>Will</td>
+          <td>Jameson</td>
+          <td>Blue</td>
+          <td>Jazz</td>
+        </tr>
+        <tr>
+          <td>Lya</td>
+          <td>Ramirez</td>
+          <td>Red</td>
+          <td>Pop punk</td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+    <table id="prettytable">
+      <caption>The prettier table</caption>
+      <thead>
+        <tr id="prettyheader">
+          <th>Name</th>
+          <th>Role</th>
+          <th>Being</th>
+          <th>Ability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="good">Shatora</td>
+          <td>Protagonist</td>
+          <td>Human/Celestial</td>
+          <td>Cosmic manipulation</td>
+        </tr>
+        <tr>
+          <td id="bad">Blaire</td>
+          <td>Antagonist</td>
+          <td>Demon Spawn</td>
+          <td>Sorcery</td>
+        </tr>
+        <tr>
+          <td>Baxus</td>
+          <td>Support</td>
+          <td>Celestial Enforcer</td>
+          <td>Realm jumping</td>
+        </tr>
+        <tr>
+          <td>Valuros</td>
+          <td>Mastermind</td>
+          <td>Celestial Demon</td>
+          <td>Mental Sorcery</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

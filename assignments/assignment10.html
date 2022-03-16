@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 10</title>
+    <style>
+      #Bill_Table,
+      #Bill_Table th,
+      #Bill_Table td {
+        border: 1px solid white;
+        padding: 15px;
+      }
+      #Bill_Table {
+        border-collapse: collapse;
+      }
+      #Bills {
+        background-color: skyblue;
+      }
+      #Col1 {
+        background-color: lightgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="font-family: Arial">Monthly Bills</h1>
+    <table id="Bill_Table">
+      <colgroup>
+        <col id="Col1">
+        <col id="Bills" span="3">
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+        <th>Bill</th>
+        <th>April</th>
+        <th>May</th>
+        <th>June</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Phone</td>
+          <td>$120</td>
+          <td>$140</td>
+          <td>$140</td>
+        </tr>
+        <tr>
+          <td>Gas</td>
+          <td>$90</td>
+          <td>$100</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Food</td>
+          <td>$280</td>
+          <td>$280</td>
+          <td>$300</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
