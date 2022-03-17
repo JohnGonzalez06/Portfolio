@@ -17,6 +17,13 @@
       padding: 12px 24px;
     }
 
+    #nav_bar {
+      position: fixed;
+      z-index: 5;
+      width: 100%;
+    }
+
+
     .left_link {
       list-style-type: none;
     }
@@ -42,8 +49,8 @@
       font-size: 48px;
       font-family: times;
       font-weight: lighter;
-      width: auto;
-      margin: 5px;
+      margin: auto;
+      padding-top: 60px;
     }
 
     .text_boxes {
@@ -56,6 +63,8 @@
       width: 400px;
       display: block;
       font-size: 14px;
+      margin-left: 20%;
+      margin-top: 10px;
     }
 
     #section2 ul li:hover {
@@ -73,19 +82,35 @@
       height: 200px;
       display: block;
       font-size: 14px;
+      margin-left: 20%;
+      margin-top: 10px;
     }
 
     #section2 {
       background: #232328;
       margin: auto;
       border-radius: 20px;
-      padding: 80px;
-      width: 600px;
+      padding-top: 40px;
+      width: 800px;
+      height: 800px;
       display: block;
     }
 
-    #section2 ul li {
+    .DM {
+      color: white;
+      text-align: center;
+      display: block;
       margin: auto;
+    }
+
+    #icon_links ul li{
+      display: inline-block;
+      text-align: center;
+      margin: 30px;
+    }
+
+    .icon img {
+      height: 50px;
     }
 
     main {
@@ -127,45 +152,61 @@
               </li>
             </ul>
         </nav>
+        <br><br>
+        <h1 class="title">Contact</h1>
+
+        <h3 style="
+        color: white;
+        text-align: center;
+        font-weight: lighter;
+        ">
+          Message me with any questions, comments, or requests. I would love to share my
+          passion with you!
+        </h3>
     </header>
-
+    <br><br><br>
         <main>
-          <section>
-            <div style="display: block;">
-              <br>
-              <h1 class="title">Contact</h1>
-
-              <h3 style="
-              color: white;
-              text-align: center;
-              font-weight: lighter;
-              ">
-                Message me with any questions, comments, or requests. I would love to share my
-                passion with you!
-              </h3>
-            </div>
-          </section>
-
-          <br>
-
           <section id="section2">
-            <ul>
-              <li class="text_boxes">
-                <p>Name</p>
-              </li>
-              <br><br><br>
-              <li class="text_boxes">
-                <p>Email</p>
-              </li>
-              <br><br><br>
-              <li class="text_boxes">
-                <p>Phone</p>
-              </li>
-              <br><br><br>
-              <li id="comment">
-                <p>Comment</p>
-              </li>
-            </ul>
+            <article>
+              <ul>
+                <li class="text_boxes">
+                  <p>Name</p>
+                </li>
+                <br><br><br>
+                <li class="text_boxes">
+                  <p>Email</p>
+                </li>
+                <br><br><br>
+                <li class="text_boxes">
+                  <p>Phone</p>
+                </li>
+                <br><br><br>
+                <li id="comment">
+                  <p>Comment</p>
+                </li>
+              </ul>
+            </article>
+            <br><br>
+            <div class="DM">
+              <p>Checkout my social media</p>
+              <hr>
+              <div id="icon_links">
+                <ul>
+                  <li class="icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png"
+                    alt="Instagram">
+                  </li>
+                  <li class="icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+                    alt="Twitter">
+                  </li>
+                  <li class="icon">
+                    <img src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png"
+                    alt="Discord">
+                  </li>
+                </ul>
+              </div>
+            </div>
           </section>
         </main>
   </body>
