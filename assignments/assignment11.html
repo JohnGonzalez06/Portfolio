@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 11</title>
+    <style>
+      body {
+        font-family: helvetica;
+      }
+
+      #flex_small img {
+        height: 200px;
+        width: 150px;
+      }
+
+      #flex_big img {
+        height: 600px;
+        width: 500px;
+      }
+
+      .flex-child img {
+        border: 2px solid gold;
+        background-color: white;
+        border-radius: 4px;
+        height: 500px;
+        margin: 10px;
+        padding: 8px 8px;
+        width: 400px;
+      }
+
+      .flex_container {
+        background-color: #232328;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex_container">
+      <div class="flex-child" id="flex_small">
+        <img src="../images/space_blue.jpeg" alt="Space">
+      </div>
+      <div class="flex-child">
+        <img src="../images/space_gradient.jpeg" alt="Stars">
+      </div>
+      <div class="flex-child" id="flex_big">
+        <img src="../images/space_justStars.jpeg" alt="starry sky">
+      </div>
+      <div class="flex-child">
+        <img src="../images/space_nova.jpeg" alt="nova">
+      </div>
+    </div>
+  </body>
+</html>

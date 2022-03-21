@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Media Queries Examples</title>
+    <style>
+      @media screen and (min-width: 800px) {
+        #header {
+          font-size: 48px;
+        }
+        #medium_screen,
+        #small_screen {
+          background-color: grey;
+          color: grey;
+        }
+        #large_screen {
+          background-color: red;
+          color: white;
+        }
+
+      }
+
+      @media screen and (max-width: 799px) {
+        #header {
+          font-size: 24px;
+        }
+        #medium_screen {
+          background-color: green;
+          color: white;
+        }
+        #large_screen,
+        #small_screen {
+          background-color: grey;
+          color: grey;
+        }
+      }
+      @media screen and (min-width: 479px) {
+          #header {
+            font-size: 16px;
+          }
+          #large_screen,
+          #medium_screen {
+            background-color: grey;
+            color: grey;
+          }
+          #small_screen {
+            background-color: blue;
+            color: white;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>HEADER</h1>
+    </div>
+    <div id="large_screen">
+      <h2>This is greater than 800px</h2>
+    </div>
+    <div id="medium_screen">
+      <h2>This is less than 800px and greater than 480px</h2>
+    </div>
+    <div id="small_screen">
+      <h2>This is less 480px</h2>
+    </div>
+    <div id="footer">
+      <h2>I dissapear when the screen gets too small</h2>
+    </div>
+  </body>
+</html>
