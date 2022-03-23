@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>HELLO WORLD</title>
+    <style>
+      @media screen and (min-width: 200px) and (max-width: 899px) {
+        .grid {
+          display: grid;
+          grid-template-columns: 1fr 3fr 1fr;
+          grid-auto-rows: minmax(50px, auto);
+          grid-template-areas:
+              "header header header header header"
+              "nav nav nav nav nav"
+              "img content content content content"
+              "content2 content2 content2 content2 img2"
+              "footer footer footer footer footer";
+          gap: 5px 5px;
+        }
+
+        img {
+          height: 400px;
+          border: 5px solid gold;
+          margin: 30px;
+        }
+
+        .header {
+          background: #232328;
+          color: white;
+          text-align: center;
+          font-size: 32px;
+          padding-top: 5px;
+          grid-area: header;
+        }
+
+        .navigation {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          align-content: center;
+          background: gold;
+          grid-area: nav;
+        }
+
+        .navLink {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+
+        .content1 {
+          padding-top: 150px;
+          margin-right: 50px;
+          grid-area: content;
+        }
+
+        .content2 {
+          padding-top: 150px;
+          margin-left: 50px;
+          text-align: right;
+          grid-area: content2;
+        }
+
+        #leo {
+          grid-area: img;
+        }
+
+        #virgo {
+          grid-area: img2;
+        }
+
+        .footer {
+          background: #232328;
+          color: white;
+          padding-top: 15px;
+          padding-left: 20px;
+          grid-area: footer;
+        }
+
+        body {
+          margin: 0px;
+          margin-top: 5px;
+          padding: 0px
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        .grid {
+          display: grid;
+          grid-template-columns: 1fr 3fr 1fr;
+          grid-auto-rows: minmax(50px, auto);
+          grid-template-areas:
+              "header header header header header"
+              "nav nav nav nav nav"
+              "img content content content content"
+              "content2 content2 content2 content2 img2"
+              "footer footer footer footer footer";
+          gap: 5px 10px;
+        }
+
+        img {
+          height: 400px;
+          border: 5px solid gold;
+          margin: 30px;
+        }
+
+        .header {
+          background: #232328;
+          color: white;
+          text-align: center;
+          font-size: 32px;
+          padding-top: 5px;
+          grid-area: header;
+        }
+
+        .navigation {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          align-content: center;
+          background: gold;
+          grid-area: nav;
+        }
+
+        .navLink {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+
+        .content1 {
+          padding-top: 150px;
+          margin-right: 100px;
+          grid-area: content;
+        }
+
+        .content2 {
+          padding-top: 150px;
+          margin-left: 100px;
+          text-align: right;
+          grid-area: content2;
+        }
+
+        #leo {
+          grid-area: img;
+          margin-top: 50px;
+          margin-left: 100px;
+        }
+
+        #virgo {
+          grid-area: img2;
+          margin-bottom: 50px;
+          margin-right: 100px;
+        }
+
+        .footer {
+          background: #232328;
+          color: white;
+          padding-top: 15px;
+          padding-left: 20px;
+          grid-area: footer;
+        }
+
+        body {
+          margin: 0px;
+          margin-top: 5px;
+          padding: 0px
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="header">Grid Layout Page</div>
+      <div class="navigation">
+        <div class="navLink">Home</div>
+        <div class="navLink">Gallery</div>
+        <div class="navLink">About Me</div>
+        <div class="navLink">Contact</div>
+      </div>
+      <div class="content1">
+        <p>Est duis distinguantur ita ea nisi incurreret fabulas.
+          Excepteur philosophari do probant, eram incididunt
+          exercitation, quibusdam si mentitum, de quem si dolor.
+          Ingeniis export eiusmod, et tempor singulis mandaremus,
+          laborum esse ipsum ab amet, culpa nostrud non legam malis
+          hic sunt a occaecat id aut quo quae esse quae, si qui sunt
+          enim noster, cupidatat sempiternum e singulis. Hic illum
+          quis do iudicem ut quid voluptate si eruditionem, singulis
+          nulla duis consequat elit id laborum ipsum esse constias
+          quid, si dolor magna duis ingeniis, quis mentitum voluptate
+          aut cupidatat in legam mentitum, pariatur consectetur et
+          probant.<p>
+      </div>
+      <div class="content2">
+        <p>Est duis distinguantur ita ea nisi incurreret fabulas.
+          Excepteur philosophari do probant, eram incididunt
+          exercitation, quibusdam si mentitum, de quem si dolor.
+          Ingeniis export eiusmod, et tempor singulis mandaremus,
+          laborum esse ipsum ab amet, culpa nostrud non legam malis
+          hic sunt a occaecat id aut quo quae esse quae, si qui sunt
+          enim noster, cupidatat sempiternum e singulis. Hic illum
+          quis do iudicem ut quid voluptate si eruditionem, singulis
+          nulla duis consequat elit id laborum ipsum esse constias
+          quid, si dolor magna duis ingeniis, quis mentitum voluptate
+          aut cupidatat in legam mentitum, pariatur consectetur et
+          probant.<p>
+      </div>
+      <div id="leo">
+        <img src="../images/Leo.jpg" alt="Leo">
+      </div>
+      <div id="virgo">
+        <img src="../images/Virgo.jpg" alt="Virgo">
+      </div>
+      <div class="footer">All Rights Reserved @_gemini.artworks</div>
+    </div>
+  </body>
+</html>
