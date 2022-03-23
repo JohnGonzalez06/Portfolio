@@ -4,18 +4,34 @@
     <title>Gemini Artworks Portfolio</title>
 
     <style>
-      .image {
-        box-shadow: 5px 5px 20px 1px;
-        display: block;
-        margin: auto;
-      }
 
       .gallery_pages {
         padding: 0px;
       }
 
+      .examples_title {
+        background-color: #232328;
+        border-top: 2px solid #ffcc00;
+        display: block;
+        margin: 0px;
+        height: 50px;
+      }
+
+      #workExamples {
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+        margin: 0px;
+      }
+
       .image_grid {
         padding: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
       }
 
       #selected {
@@ -35,8 +51,11 @@
 
       #logo {
         color: #ffcc00;
-        display: inline-block;
-        padding-left: 20px;
+        font-size: 32px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 45%;
       }
 
       .right_link {
@@ -54,11 +73,10 @@
         list-style: outside none none;
       }
 
-      .grid_image {
-        display: inline-block;
-        width: auto;
-        margin: 50px;
-        list-style: outside none none;
+      .grid_image img {
+        box-shadow: 5px 5px 20px 1px;
+        height: 400px;
+        margin: 20px;
       }
 
       #current {
@@ -68,6 +86,12 @@
       #I_Block {
         background: #232328;
         box-shadow: 0px 2px 0px 0px rgba(0, 153, 153, 1);
+        margin: 0px;
+        padding: 0px
+      }
+
+      #I_Block p {
+        margin-bottom: 0px;
       }
 
       #nav_bar ul {
@@ -75,6 +99,7 @@
         background: #232328;
         box-shadow: 0px 2px 0px 0px rgba(153, 51, 153, 1);
         padding-inline-start: 0px;
+        margin-top: 10px;
         font-size: 20px;
       }
 
@@ -98,7 +123,9 @@
       }
 
       body {
+        margin: 0px;
         background-image: url('Space_Background.jpg');
+        background-repeat: no-repeat;
         background-size: contain;
       }
     </style>
@@ -156,8 +183,8 @@
 
           <p style="
           padding-bottom: 20px;
-          padding-left: 20px;
-          padding-right: 20px;
+          padding-left: 200px;
+          padding-right: 200px;
           text-align: center;
           color: white;
           font-size: 14px;
@@ -169,15 +196,16 @@
             the world of astrology as the main theme for my services.
           </p>
         </div>
-
-        <br>
-        <h2 style="text-align: center; color: white;">
-          Work Examples
-        </h2>
-        <br>
+        <br><br><br><br>
+        <div class="examples_title">
+          <h2 id="workExamples">
+            Work Examples
+          </h2>
+        </div>
 
         <div style="
-        border: 2px solid #ffcc00;
+        border-top: 2px solid #ffcc00;
+        border-bottom: 2px solid #ffcc00;
         background-color: #232328;
         text-align: center;">
           <ul class="gallery_pages">
@@ -199,49 +227,35 @@
             </li>
           </ul>
 
-          <ul class="image_grid">
-            <li class="grid_image">
-              <img class="image" style="
-              height: 400px"
-              src="images/Pisces.jpg" alt="Pisces Art">
-            </li>
+          <div class="image_grid">
+            <div class="grid_image">
+              <img src="images/Pisces.jpg" alt="Pisces Art">
+            </div>
 
-            <li class="grid_image">
-              <img class="image" style="
-              height: 400px"
-              src="images/Aries.jpg" alt="Aries Art">
-            </li>
+            <div class="grid_image">
+              <img src="images/Aries.jpg" alt="Aries Art">
+            </div>
 
-            <li class="grid_image">
-              <img class="image" style="
-              height: 400px"
-              src="images/Taurus.jpg" alt="Taurus Art">
-            </li>
+            <div class="grid_image">
+              <img src="images/Taurus.jpg" alt="Taurus Art">
+            </div>
 
-            <li class="grid_image">
-              <img class="image" style="
-              height: 400px"
-              src="images/Gemini.jpg" alt="Gemini Art">
-            </li>
+            <div class="grid_image">
+              <img src="images/Gemini.jpg" alt="Gemini Art">
+            </div>
 
-            <li class="grid_image">
-              <img class="image" style="
-              height: 400px"
-              src="images/Cancer.jpg" alt="Cancer Art">
-            </li>
+            <div class="grid_image">
+              <img src="images/Cancer.jpg" alt="Cancer Art">
+            </div>
 
-            <li class="grid_image">
-              <img class="image" style="
-              height: 400px"
-              src="images/Leo.jpg" alt="Leo Art">
-            </li>
+            <div class="grid_image">
+              <img src="images/Leo.jpg" alt="Leo Art">
+            </div>
 
-            <li class="grid_image">
-              <img class="image" style="
-              height: 400px"
-              src="images/Virgo.JPG" alt="Virgo Art">
-            </li>
-          </ul>
+            <div class="grid_image">
+              <img src="images/Virgo.JPG" alt="Virgo Art">
+            </div>
+          </div>
         </div>
       </section>
     </main>

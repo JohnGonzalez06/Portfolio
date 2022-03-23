@@ -4,134 +4,160 @@
     <title>Portfolio</title>
 
     <style>
-      .image {
-        box-shadow: 5px 5px 20px 1px;
-        display: block;
-        margin: auto;
-      }
 
-      .gallery_pages {
-        padding: 0px;
-      }
+    .gallery_pages {
+      padding: 0px;
+    }
 
-      .image_grid {
-        padding: 10px;
-      }
+    .examples_title {
+      background-color: #232328;
+      border-top: 2px solid #ffcc00;
+      display: block;
+      margin: 0px;
+      height: 50px;
+    }
 
-      #selected {
-        display: inline-block;
-        color: rgba(0, 153, 153, 1);
-        background-color: #232328;
-        border: 1px solid; padding: 10px;
-        font-size: 24px;
-        width: auto;
-        margin: 50px;
-        list-style: outside none none;
-      }
+    #workExamples {
+      color: white;
+      text-align: center;
+      padding-top: 10px;
+      margin: 0px;
+    }
 
-      #current {
-        color: #ffcc00;
-      }
+    .image_grid {
+      padding: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+    }
 
-      .left_link {
-        list-style-type: none;
-      }
+    #selected {
+      display: inline-block;
+      color: rgba(0, 153, 153, 1);
+      background-color: #232328;
+      border: 1px solid; padding: 10px;
+      font-size: 24px;
+      width: auto;
+      margin: 50px;
+      list-style: outside none none;
+    }
 
-      #logo {
-        color: #ffcc00;
-        display: inline-block;
-        padding-left: 20px;
-      }
+    .left_link {
+      list-style-type: none;
+    }
 
-      .right_link {
-        list-style-type: none;
-        float: right;
-      }
+    #logo {
+      color: #ffcc00;
+      font-size: 32px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 45%;
+    }
 
-      .page_list {
-        display: inline-block;
-        font-size: 24px;
-        color: white;
-        background-color: #232328;
-        width: auto;
-        margin: 50px;
-        list-style: outside none none;
-      }
+    .right_link {
+      list-style-type: none;
+      float: right;
+    }
 
-      .grid_image {
-        display: inline-block;
-        width: auto;
-        margin: 50px;
-        list-style: outside none none;
-      }
+    .page_list {
+      display: inline-block;
+      font-size: 24px;
+      color: white;
+      background-color: #232328;
+      width: auto;
+      margin: 50px;
+      list-style: outside none none;
+    }
 
-      #I_Block {
-        background: #232328;
-        box-shadow: 0px 2px 0px 0px rgba(0, 153, 153, 1);
-      }
+    .grid_image img {
+      box-shadow: 5px 5px 20px 1px;
+      height: 400px;
+      margin: 20px;
+    }
 
-      #nav_bar ul {
-        color: white;
-        background: #232328;
-        box-shadow: 0px 2px 0px 0px rgba(153, 51, 153, 1);
-        padding-inline-start: 0px;
-        font-size: 20px;
-      }
+    #current {
+      color: #ffcc00;
+    }
 
-      #nav_bar ul li {
-        display: inline-block;
-        padding: 12px 24px;
-      }
+    #I_Block {
+      background: #232328;
+      box-shadow: 0px 2px 0px 0px rgba(0, 153, 153, 1);
+      margin: 0px;
+      padding: 0px
+    }
 
-      #nav_bar {
-        position: fixed;
-        z-index: 5;
-        width: 100%;
-      }
+    #I_Block p {
+      margin-bottom: 0px;
+    }
 
-      main {
-        font-family: times;
-      }
+    #nav_bar ul {
+      color: white;
+      background: #232328;
+      box-shadow: 0px 2px 0px 0px rgba(153, 51, 153, 1);
+      padding-inline-start: 0px;
+      margin-top: 10px;
+      font-size: 20px;
+    }
 
-      header {
-        font-family: times;
-      }
+    #nav_bar ul li {
+      display: inline-block;
+      padding: 12px 24px;
+    }
 
-      body {
-        background-image: url('Space_Background.jpg');
-        background-size: contain;
-      }
-    </style>
+    #nav_bar {
+      position: fixed;
+      z-index: 5;
+      width: 100%;
+    }
 
-  </head>
-  <body>
+    main {
+      font-family: times;
+    }
 
-    <!-- Portfolio title -->
-    <header>
-        <nav id="nav_bar">
-            <ul>
-              <div id="logo">
-                Gemini Artworks
-              </div>
-              <li class="left_link" id="current">Home</li>
-              <li class="right_link">
-                <a href="About_Me.html" style="text-decoration: none; color: white;">
-                About Me
-                </a>
-              </li>
-              <li class="right_link">
-                <a href="Contact_Page.html" style="text-decoration: none; color: white;">
-                Contact
-                </a>
-              </li>
-            </ul>
-        </nav>
-    </header>
+    header {
+      font-family: times;
+    }
 
-    <main>
-      <section>
-        <br><br><br>
+    body {
+      margin: 0px;
+      background-image: url('Space_Background.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  </style>
 
+</head>
+<body>
+
+  <!-- Portfolio title -->
+  <header>
+      <nav id="nav_bar">
+          <ul>
+            <div id="logo">
+              Gemini Artworks
+            </div>
+            <li class="left_link" id="current">Home</li>
+            <li class="right_link">
+              <a href="About_Me.html" style="text-decoration: none; color: white;">
+              About Me
+              </a>
+            </li>
+            <li class="right_link">
+              <a href="Contact_Page.html" style="text-decoration: none; color: white;">
+              Contact
+              </a>
+            </li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section>
+      <br><br><br>
       <!-- Logo -->
       <img src="Gemini_Artworks_Icon2.png" alt="Gemini Artworks Logo"
       style="
@@ -157,8 +183,8 @@
 
         <p style="
         padding-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 200px;
+        padding-right: 200px;
         text-align: center;
         color: white;
         font-size: 14px;
@@ -170,15 +196,16 @@
           the world of astrology as the main theme for my services.
         </p>
       </div>
-
-      <br>
-      <h2 style="text-align: center; color: white;">
-        Work Examples
-      </h2>
-      <br>
+      <br><br><br><br>
+      <div class="examples_title">
+        <h2 id="workExamples">
+          Work Examples
+        </h2>
+      </div>
 
       <div style="
-      border: 2px solid #ffcc00;
+      border-top: 2px solid #ffcc00;
+      border-bottom: 2px solid #ffcc00;
       background-color: #232328;
       text-align: center;">
 
@@ -201,37 +228,27 @@
             <li class="page_list" id="selected">InDesign</li>
           </ul>
 
-          <ul class="image_grid">
-            <li class="grid_image">
-              <img class="image" style="
-              height: 400px"
-              src="images/InDesign/FlavorsPizza.jpg" alt="Two-Page Spread">
-            </li>
+          <div class="image_grid">
+            <div class="grid_image">
+              <img src="images/InDesign/FlavorsPizza.jpg" alt="Two-Page Spread">
+            </div>
 
-            <li class="grid_image">
-              <img class="image" style="
-              height: 400px"
-              src="images/InDesign/Summerwear.jpg" alt="Summer Catalogue">
-            </li>
+            <div class="grid_image">
+              <img src="images/InDesign/Summerwear.jpg" alt="Summer Catalogue">
+            </div>
 
-            <li class="grid_image">
-              <img class="image" style="
-              height: 400px"
-              src="images/InDesign/ModernTouch.jpg" alt="Furniture Catalogue">
-            </li>
+            <div class="grid_image">
+              <img src="images/InDesign/ModernTouch.jpg" alt="Furniture Catalogue">
+            </div>
 
-            <li class="grid_image">
-              <img class="image" style="
-              height: 400px"
-              src="images/InDesign/First_Brochure1.jpg" alt="First Institute Brochure">
-            </li>
+            <div class="grid_image">
+              <img src="images/InDesign/First_Brochure1.jpg" alt="First Institute Brochure">
+            </div>
 
-            <li class="grid_image">
-              <img class="image" style="
-              height: 400px"
-              src="images/InDesign/First_Brochure2.jpg" alt="First Institute Brochure">
-            </li>
-          </ul>
+            <div class="grid_image">
+              <img src="images/InDesign/First_Brochure2.jpg" alt="First Institute Brochure">
+            </div>
+          </div>
         </div>
       </section>
     </main>
