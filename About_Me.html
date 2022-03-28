@@ -4,99 +4,293 @@
     <title>Gemini Artworks About</title>
 
     <style>
-    #nav_bar ul {
-      color: white;
-      background: #232328;
-      box-shadow: 0px 5px 0px 0px rgba(153, 51, 153, 1);
-      padding-inline-start: 0px;
-      margin-top: 10px;
-      font-size: 20px;
+    @media screen and (min-width: 599px) {
+      #nav_bar ul {
+        color: white;
+        background: #232328;
+        box-shadow: 0px 2px 0px 0px #ffcc00;
+        padding-inline-start: 0px;
+        margin-top: 0px;
+        font-size: 20px;
+      }
+
+      #nav_bar ul li {
+        display: inline-block;
+        padding: 12px 24px;
+      }
+
+      #nav_bar {
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+      }
+
+      .left_link {
+        list-style-type: none;
+      }
+
+      #logo {
+        color: #ffcc00;
+        font-size: 32px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 35%;
+      }
+
+      .right_link {
+        list-style-type: none;
+        float: right;
+      }
+
+      #current {
+        color: #ffcc00;
+      }
+
+      .title {
+        text-align: center;
+        color: #ffcc00;
+        font-size: 48px;
+        font-family: times;
+        font-weight: lighter;
+        margin: auto;
+        padding-top: 60px;
+      }
+
+      .Para_card {
+        background-color: #232328;
+        border: 1px solid #ffcc00;
+        color: white;
+        font-size: 16px;
+        width: 50%;
+        height: auto;
+        padding: 20px;
+        padding-right: 20px;
+        margin: 40px;
+      }
+
+      .cardTitle {
+        font-weight: 200;
+        font-size: 32px;
+        color: rgba(0, 153, 153, 1);
+      }
+
+      #about_cards {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      main {
+        font-family: times;
+      }
+
+      header {
+        font-family: times;
+      }
+
+      body {
+        margin: 0px;
+        background-image: url('Space_Background.jpg');
+        background-size: 1920px 1080px;
+      }
+
+      .footer {
+        background-color: #ffcc00;
+        color: #232328;
+        width: auto;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas:
+            "head head head"
+            "Line1-1 Line1-2 Line1-3"
+            "Line2-1 Line2-2 Line2-3"
+            "Line3-1 Line3-2 Line3-3"
+            "Contact Contact2 Contact3"
+            "Copyright Copyright2 Copyright3";
+        gap: 10px 10px;
+      }
+
+      #head {
+        grid-area: head;
+        font-size: 24px;
+        border-bottom: 1px solid #232328;
+      }
+      #row1 {
+        grid-area: Line1-1;
+      }
+      #row2 {
+        grid-area: Line2-1;
+      }
+      #row3 {
+        grid-area: Line3-1;
+      }
+      #row1-2 {
+        grid-area: Line1-2;
+      }
+      #row2-2 {
+        grid-area: Line2-2;
+      }
+      #phone {
+        grid-area: Contact2;
+      }
+      #email {
+        grid-area: Contact;
+      }
+      #insta {
+        grid-area: Contact3;
+      }
     }
 
-    #nav_bar ul li {
-      display: inline-block;
-      padding: 12px 24px;
-    }
 
-    #nav_bar {
-      position: fixed;
-      z-index: 5;
-      width: 100%;
-    }
+    @media screen and (max-width: 600px) {
+      #nav_bar ul {
+        color: white;
+        background: #232328;
+        box-shadow: 0px 2px 0px 0px #ffcc00;
+        padding-inline-start: 0px;
+        margin-top: 0px;
+        font-size: 20px;
+      }
 
-    .left_link {
-      list-style-type: none;
-    }
+      #nav_bar ul li {
+        display: inline-block;
+        padding: 12px 24px;
+      }
 
-    #logo {
-      color: #ffcc00;
-      font-size: 32px;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      top: 45%;
-    }
+      #nav_bar {
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+      }
 
-    .right_link {
-      list-style-type: none;
-      float: right;
-    }
+      .left_link {
+        list-style-type: none;
+      }
 
-    #current {
-      color: #ffcc00;
-    }
+      #logo {
+        color: #ffcc00;
+        font-size: 32px;
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 35%;
+      }
 
-    .title {
-      text-align: center;
-      color: #ffcc00;
-      font-size: 48px;
-      font-family: times;
-      font-weight: lighter;
-      margin: auto;
-      padding-top: 60px;
-    }
+      .right_link {
+        list-style-type: none;
+        float: right;
+      }
 
-    .Para_card {
-      background-color: #232328;
-      border: 1px solid #ffcc00;
-      color: white;
-      font-size: 16px;
-      width: 50%;
-      height: 500px;
-      padding: 20px;
-      padding-right: 500px; 
-      margin: 40px;
-    }
+      #current {
+        color: #ffcc00;
+      }
 
-    .cardTitle {
-      font-weight: 200;
-      font-size: 32px;
-      color: rgba(0, 153, 153, 1);
-    }
+      .title {
+        text-align: center;
+        color: #ffcc00;
+        font-size: 48px;
+        font-family: times;
+        font-weight: lighter;
+        margin: auto;
+        padding-top: 40px;
+      }
 
-    #about_cards {
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
+      .Para_card {
+        background-color: #232328;
+        border: 1px solid #ffcc00;
+        color: white;
+        font-size: 14px;
+        width: 50%;
+        height: auto;
+        padding: 20px;
+        padding-right: 20px;
+        margin: 40px;
+      }
 
-    main {
-      font-family: times;
-    }
+      .cardTitle {
+        font-weight: 200;
+        font-size: 32px;
+        color: rgba(0, 153, 153, 1);
+      }
 
-    header {
-      font-family: times;
-    }
+      #about_cards {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
 
-    body {
-      margin: 0px;
-      background-image: url('Space_Background.jpg');
-      background-size: 1920px 1080px;
-    }
+      main {
+        font-family: times;
+      }
 
+      header {
+        font-family: times;
+      }
+
+      body {
+        margin: 0px;
+        background-image: url('Space_Background.jpg');
+        background-size: 1920px 1080px;
+      }
+
+      .footer {
+        background-color: #ffcc00;
+        color: #232328;
+        width: auto;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas:
+            "head head head"
+            "Line1-1 Line1-2 Line1-3"
+            "Line2-1 Line2-2 Line2-3"
+            "Line3-1 Line3-2 Line3-3"
+            "Contact Contact2 Contact3"
+            "Copyright Copyright2 Copyright3";
+        gap: 10px 10px;
+      }
+
+      #head {
+        grid-area: head;
+        font-size: 24px;
+        border-bottom: 1px solid #232328;
+      }
+      #row1 {
+        grid-area: Line1-1;
+      }
+      #row2 {
+        grid-area: Line2-1;
+      }
+      #row3 {
+        grid-area: Line3-1;
+      }
+      #row1-2 {
+        grid-area: Line1-2;
+      }
+      #row2-2 {
+        grid-area: Line2-2;
+      }
+      #phone {
+        grid-area: Contact2;
+      }
+      #email {
+        grid-area: Contact;
+      }
+      #insta {
+        grid-area: Contact3;
+      }
+    }
     </style>
 
   </head>
@@ -176,6 +370,56 @@
         </div>
       </section>
     </main>
-
+    <br><br><br>
+    <footer>
+      <div>
+        <div class="footer">
+          <div id="head">
+            Gemini Artworks
+          </div>
+          <div id="row1">
+            Gallery -
+            <a href="HomeIllustrator.html"
+            style="text-decoration: none;
+            color: #232328;">
+              Illustrator
+            </a>
+          </div>
+          <div id="row2">
+            Gallery -
+            <a href="HomePhotoshop.html"
+            style="text-decoration: none;
+            color: #232328;">
+              Photoshop
+            </a>
+          </div>
+          <div id="row3">
+            Gallery -
+            <a href="HomeIndesign.html"
+            style="text-decoration: none;
+            color: #232328;">
+              Indesign
+            </a>
+          </div>
+          <div id="row1-2">
+            <a href="Contact_Page.html"
+            style="text-decoration: none;
+            color: #232328;">
+              Contact
+            </a>
+          </div>
+          <div id="row2-2">
+            <a href="About_Me.html"
+            style="text-decoration: none;
+            color: #232328;">
+              About Me
+            </a>
+          </div>
+          <div id="phone">407-652-8646</div>
+          <div id="email">gonzalezjohnathan8541@gmail.com</div>
+          <div id="insta">@_gemini.artworks</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

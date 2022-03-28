@@ -5,128 +5,370 @@
 
     <style>
 
-    .gallery_pages {
-      padding: 0px;
+    @media screen and (min-width: 600px) {
+      .gallery_pages {
+        padding: 0px;
+      }
+
+      .examples_title {
+        background-color: #232328;
+        border-top: 2px solid #ffcc00;
+        display: block;
+        margin: 0px;
+        height: 50px;
+      }
+
+      #workExamples {
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+        margin: 0px;
+      }
+
+      .image_grid {
+        padding: 40px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+      }
+
+      #selected {
+        display: inline-block;
+        color: rgba(0, 153, 153, 1);
+        background-color: rgba(56, 60, 71, 0.5);
+        border: 1px solid; padding: 10px;
+        font-size: 24px;
+        width: auto;
+        margin: 30px;
+        list-style: outside none none;
+      }
+
+      .left_link {
+        list-style-type: none;
+      }
+
+      #logo {
+        color: #ffcc00;
+        font-size: 32px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 35%;
+      }
+
+      .right_link {
+        list-style-type: none;
+        float: right;
+      }
+
+      .page_list {
+        display: inline-block;
+        font-size: 24px;
+        color: white;
+        width: auto;
+        margin: 30px;
+        list-style: outside none none;
+      }
+
+      .grid_image img {
+        box-shadow: 5px 5px 20px 1px;
+        height: 400px;
+        margin: 20px;
+      }
+
+      #current {
+        color: #ffcc00;
+      }
+
+      #I_Block {
+        background: #232328;
+        box-shadow: 1px 0px 0px 2px #ffcc00;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0px;
+      }
+
+      #paragraph {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        font-family: helveticaneue;
+      }
+
+      #nav_bar ul {
+        color: white;
+        background: #232328;
+        box-shadow: 0px 2px 0px 0px #ffcc00;
+        padding-inline-start: 0px;
+        margin-top: 0px;
+        font-size: 20px;
+      }
+
+      #nav_bar ul li {
+        display: inline-block;
+        padding: 12px 24px;
+      }
+
+      #nav_bar {
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+      }
+
+      main {
+        font-family: times;
+      }
+
+      header {
+        font-family: times;
+      }
+
+      body {
+        margin: 0px;
+        background-image: url('Space_Background.jpg');
+        background-repeat: repeat;
+        background-size: contain;
+      }
+
+      .footer {
+        background-color: #ffcc00;
+        color: #232328;
+        width: auto;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas:
+            "head head head"
+            "Line1-1 Line1-2 Line1-3"
+            "Line2-1 Line2-2 Line2-3"
+            "Line3-1 Line3-2 Line3-3"
+            "Contact Contact2 Contact3"
+            "Copyright Copyright2 Copyright3";
+        gap: 10px 10px;
+      }
+
+      #head {
+        grid-area: head;
+        font-size: 24px;
+        border-bottom: 1px solid #232328;
+      }
+      #row1 {
+        grid-area: Line1-1;
+      }
+      #row2 {
+        grid-area: Line2-1;
+      }
+      #row3 {
+        grid-area: Line3-1;
+      }
+      #row1-2 {
+        grid-area: Line1-2;
+      }
+      #row2-2 {
+        grid-area: Line2-2;
+      }
+      #phone {
+        grid-area: Contact2;
+      }
+      #email {
+        grid-area: Contact;
+      }
+      #insta {
+        grid-area: Contact3;
+      }
     }
 
-    .examples_title {
-      background-color: #232328;
-      border-top: 2px solid #ffcc00;
-      display: block;
-      margin: 0px;
-      height: 50px;
-    }
+    @media screen and (max-width: 599px) {
+      .gallery_pages {
+        padding: 0px;
+      }
 
-    #workExamples {
-      color: white;
-      text-align: center;
-      padding-top: 10px;
-      margin: 0px;
-    }
+      .examples_title {
+        background-color: #232328;
+        border-top: 2px solid #ffcc00;
+        display: block;
+        margin: 0px;
+        height: 50px;
+      }
 
-    .image_grid {
-      padding: 10px;
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: baseline;
-    }
+      #workExamples {
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+        margin: 0px;
+      }
 
-    #selected {
-      display: inline-block;
-      color: rgba(0, 153, 153, 1);
-      background-color: #232328;
-      border: 1px solid; padding: 10px;
-      font-size: 24px;
-      width: auto;
-      margin: 50px;
-      list-style: outside none none;
-    }
+      .image_grid {
+        padding: 60px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
 
-    .left_link {
-      list-style-type: none;
-    }
+      #selected {
+        display: inline-block;
+        color: rgba(0, 153, 153, 1);
+        background-color: rgba(56, 60, 71, 0.5);
+        border: 1px solid; padding: 10px;
+        font-size: 18px;
+        width: auto;
+        margin: 10px;
+        list-style: outside none none;
+      }
 
-    #logo {
-      color: #ffcc00;
-      font-size: 32px;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      top: 45%;
-    }
+      .left_link {
+        list-style-type: none;
+      }
 
-    .right_link {
-      list-style-type: none;
-      float: right;
-    }
+      #logo {
+        color: rgba(255, 204, 0, 0);
+        font-size: 24px;
+        display: none;
+        position: absolute;
+        left: 40%;
+        transform: translate(-30%, -50%);
+        top: 35%;
+      }
 
-    .page_list {
-      display: inline-block;
-      font-size: 24px;
-      color: white;
-      background-color: #232328;
-      width: auto;
-      margin: 50px;
-      list-style: outside none none;
-    }
+      .right_link {
+        list-style-type: none;
+        float: right;
+      }
 
-    .grid_image img {
-      box-shadow: 5px 5px 20px 1px;
-      height: 400px;
-      margin: 20px;
-    }
+      .page_list {
+        display: inline-block;
+        font-size: 18px;
+        color: white;
+        width: auto;
+        margin: 10px;
+        list-style: outside none none;
+      }
 
-    #current {
-      color: #ffcc00;
-    }
+      .grid_image img {
+        box-shadow: 5px 5px 20px 1px;
+        height: 300px;
+        margin: 30px;
+      }
 
-    #I_Block {
-      background: #232328;
-      box-shadow: 0px 2px 0px 0px rgba(0, 153, 153, 1);
-      margin: 0px;
-      padding: 0px
-    }
+      #current {
+        color: #ffcc00;
+      }
 
-    #I_Block p {
-      margin-bottom: 0px;
-    }
+      #I_Block {
+        background: #232328;
+        box-shadow: 1px 0px 0px 2px #ffcc00;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0px;
+      }
 
-    #nav_bar ul {
-      color: white;
-      background: #232328;
-      box-shadow: 0px 2px 0px 0px rgba(153, 51, 153, 1);
-      padding-inline-start: 0px;
-      margin-top: 10px;
-      font-size: 20px;
-    }
+      #paragraph {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        font-family: helveticaneue;
+      }
 
-    #nav_bar ul li {
-      display: inline-block;
-      padding: 12px 24px;
-    }
+      #nav_bar ul {
+        color: white;
+        background: #232328;
+        box-shadow: 0px 2px 0px 0px #ffcc00;
+        padding-inline-start: 0px;
+        margin-top: 0px;
+        font-size: 20px;
+      }
 
-    #nav_bar {
-      position: fixed;
-      z-index: 5;
-      width: 100%;
-    }
+      #nav_bar ul li {
+        display: inline-flex;
+        padding: 12px 24px;
+      }
 
-    main {
-      font-family: times;
-    }
+      #nav_bar {
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+      }
 
-    header {
-      font-family: times;
-    }
+      main {
+        font-family: times;
+      }
 
-    body {
-      margin: 0px;
-      background-image: url('Space_Background.jpg');
-      background-repeat: no-repeat;
-      background-size: contain;
+      header {
+        font-family: times;
+      }
+
+      body {
+        margin: 0px;
+        background-image: url('Space_Background.jpg');
+        background-repeat: repeat;
+        background-size: contain;
+      }
+
+      .footer {
+        background-color: #ffcc00;
+        font-size: 14px;
+        color: #232328;
+        width: auto;
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas:
+            "head head head"
+            "Line1-1 Line1-2 Line1-3"
+            "Line2-1 Line2-2 Line2-3"
+            "Line3-1 Line3-2 Line3-3"
+            "Contact Contact2 Contact3"
+            "Copyright Copyright2 Copyright3";
+        gap: 10px 10px;
+      }
+
+      #head {
+        grid-area: head;
+        font-size: 24px;
+        border-bottom: 1px solid #232328;
+      }
+      #row1 {
+        grid-area: Line1-1;
+      }
+      #row2 {
+        grid-area: Line2-1;
+      }
+      #row3 {
+        grid-area: Line3-1;
+      }
+      #row1-2 {
+        grid-area: Line1-2;
+      }
+      #row2-2 {
+        grid-area: Line2-2;
+      }
+      #phone {
+        grid-area: Contact2;
+      }
+      #email {
+        grid-area: Contact;
+      }
+      #insta {
+        grid-area: Contact3;
+      }
     }
   </style>
 
@@ -161,7 +403,7 @@
       <!-- Logo -->
       <img src="Gemini_Artworks_Icon2.png" alt="Gemini Artworks Logo"
       style="
-      height: 400px;
+      height: 300px;
       display: block;
       margin: auto;
       padding-top: 60px;
@@ -181,15 +423,7 @@
           Hey, John here!
         </h2>
 
-        <p style="
-        padding-bottom: 20px;
-        padding-left: 200px;
-        padding-right: 200px;
-        text-align: center;
-        color: white;
-        font-size: 14px;
-        font-family: helveticaneue;
-        ">
+        <p id="paragraph">
           I am a newly introduced graphic designer with a good amount of experience
           in fine arts and digital art. As of now, I have found interest in more than one
           type of art, but most of my work comes from the digital technique as I explore
@@ -204,11 +438,10 @@
       </div>
 
       <div style="
-      border-top: 2px solid #ffcc00;
-      border-bottom: 2px solid #ffcc00;
-      background-color: #232328;
+      border-top: 5px groove #ffcc00;
+      border-bottom: 5px groove #ffcc00;
+      background: linear-gradient(to top, rgba(56, 60, 71, 0.5), rgba(0, 0, 0, 0.5));
       text-align: center;">
-
           <ul class="gallery_pages">
             <li class="page_list">
               <a href="index.html" style="text-decoration: none; color: white;">
@@ -252,5 +485,56 @@
         </div>
       </section>
     </main>
+    <br><br><br>
+    <footer>
+      <div>
+        <div class="footer">
+          <div id="head">
+            Gemini Artworks
+          </div>
+          <div id="row1">
+            Gallery -
+            <a href="HomeIllustrator.html"
+            style="text-decoration: none;
+            color: #232328;">
+              Illustrator
+            </a>
+          </div>
+          <div id="row2">
+            Gallery -
+            <a href="HomePhotoshop.html"
+            style="text-decoration: none;
+            color: #232328;">
+              Photoshop
+            </a>
+          </div>
+          <div id="row3">
+            Gallery -
+            <a href="HomeIndesign.html"
+            style="text-decoration: none;
+            color: #232328;">
+              Indesign
+            </a>
+          </div>
+          <div id="row1-2">
+            <a href="Contact_Page.html"
+            style="text-decoration: none;
+            color: #232328;">
+              Contact
+            </a>
+          </div>
+          <div id="row2-2">
+            <a href="About_Me.html"
+            style="text-decoration: none;
+            color: #232328;">
+              About Me
+            </a>
+          </div>
+          <div id="phone">407-652-8646</div>
+          <div id="email">gonzalezjohnathan8541@gmail.com</div>
+          <div id="insta">@_gemini.artworks</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
