@@ -6,98 +6,265 @@
     <title>Goerge R.R. Martin | Website of Author George R.R. Martin</title>
     <link rel="shortcut icon"
     href="https://georgerrmartin.com/wp-content/themes/GRRM/images/favicon.ico">
-
     <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+
     <style>
       @media screen and (min-width: 480px) {
         body {
-          background-image: url(https://www.georgerrmartin.com/theme/overall-bg.jpg);
-          background-repeat: repeat-y;
-          background-position: center 334px;
+          background: #a8a8a8;
+          padding: 0px;
+          color: #373737;
           font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
           font-weight: 300;
           line-height: 1.625;
         }
 
+        #grrmbody {
+          background-repeat: repeat-y;
+          background-position: center 334px;
+        }
+
         #page {
-          background-image: url(https://www.georgerrmartin.com/theme/overall-bg.jpg);
           background-repeat: no-repeat;
           background-position: center 138px;
           min-width: 1000px;
-        }
-
-        #page-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-auto-rows: minmax(100px, auto);
-          grid-template-areas:
-              "slide slide slide"
-              "page# page# page#"
-              "imgRow1 imgRow2 imgRow3"
-              "sideImg1 content content"
-              "sideImg2 content content"
-              "sideImg3 content content"
-              "sideImg4 content content"
-              "sideImg5 content content"
-              "copyright copyright copyright"
+          margin: 0px auto;
         }
 
         #branding {
-          background-image: url(https://www.georgerrmartin.com/theme/overall-bg.jpg);
+          padding-bottom: 0px;
+          position: relative;
+          background-position: center top;
+          height: 138px;
+          background-repeat: no-repeat;
+        }
 
+        header {
+          display: block;
+        }
+
+        div {
+          font-family: Verdana, Geneva, sans-serif;
+          font-size: 13px;
+          display: block;
+        }
+
+        h3 {
+          font-family: 'Montaga', serif;
+          font-size: 20px;
+          color: #1c4268;
+          font-weight: normal;
+          text-transform: uppercase;
+        }
+
+        .headertable {
+          width: 995px;
+          margin: 0px auto;
+        }
+
+        .shield {
+          display: inline-block;
+          height: 102px;
+          width: auto;
+        }
+
+        .grrm-name {
+          display: inline-block;
+          vertical-align: top;
+          height: 102px;
+          width: auto;
+        }
+
+        .social {
+          display: inline-block;
+          vertical-align: top;
+          height: 102px;
+          width: auto;
+        }
+
+        #search {
+          background-repeat: no-repeat;
+          padding-left: 13px;
+        }
+
+        #menu-grrm {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #access div {
+          margin: 0px 7.6%;
+        }
+
+        #access ul {
+          font-size: 13px;
+          list-style: none;
+          margin: 0 0 0 -5em;
+          padding-left: 0;
+        }
+
+        #access li {
+          color: #000;
+          display: block;
+          line-height: 2em;
+          padding: 0 1.4em;
+          text-decoration: none;
+          font-family: 'Montaga', serif;
+          text-transform: uppercase;
+          font-size: 1.2em;
+          letter-spacing: .1em;
+
+        }
+
+        .assistive-text {
+          position: absolute !important;
+          clip: rect(1px, 1px, 1px, 1px);
+        }
+
+        #main {
+          padding: 0px;
+          width: 1000px;
+          margin: 0px auto;
+          background-position: center top;
+          background-repeat: repeat-y;
+        }
+
+        .main-sec {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-auto-rows: minmax(150px, auto);
+          grid-gap: 10px;
+          grid-template-areas:
+              "imgHead imgHead2 imgHead3"
+              "imgSub1 imgSub2 imgSub3"
+              "side1 article article"
+              "side2 article article"
+              "side3 article article"
+              "side4 article article"
+              "side5 article article"
+        }
+
+        #imgHead {
+          grid-area: imgHead imgHead2 imgHead3;
+          background-image: url(../images/callout-1.jpeg);
+          background-repeat: no-repeat;
+          text-align: center;
+          padding: 7px 8px 0px 7px;
+          width: 958px;
+          height: 326px;
+          margin: 0 auto;
+        }
+
+        #pages {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        .num {
+          grid-area: imgHead;
+          font-family: Verdana, Geneva, sans-serif;
+          padding: 0px 2px 0px 3px;
+          color: #989288;
+          background-image: url(../images/numbers-off.jpeg);
+          background-position: center top;
+          background-repeat: no-repeat;
+          width: 17px;
+          text-align: center;
+          text-transform: uppercase;
+          letter-spacing: .1em;
+          display: inline-block;
+          font-size: 11px;
+          height: 17px;
         }
       }
 
       @media screen and (max-width: 479px) {
-        body {
-          background-image: url(https://www.georgerrmartin.com/theme/overall-bg.jpg);
-          background-repeat: repeat-y;
-          background-position: center 400px;
-          font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-          font-weight: 200;
-          line-height: 1.625;
-        }
 
-        #page {
-          background-image: url(https://www.georgerrmartin.com/theme/overall-bg.jpg);
-          background-repeat: no-repeat;
-          background-position: center 50px;
-          min-width: 480px;
-        }
-
-        #page-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-auto-rows: minmax(100px, auto);
-          grid-template-areas:
-              "slide slide slide"
-              "page# page# page#"
-              "imgRow1 imgRow2 imgRow3"
-              "sideImg1 content content"
-              "sideImg2 content content"
-              "sideImg3 content content"
-              "sideImg4 content content"
-              "sideImg5 content content"
-              "copyright copyright copyright"
-        }
-
-        #branding {
-          background-image: url(https://www.georgerrmartin.com/theme/overall-bg.jpg);
-
-        }
       }
     </style>
 
   </head>
   <body>
-    <header id="branding">
+    <div id="grrmbody" style="background-image: url(../images/overall-bg.jpeg)">
+      <div id="page" style="background-image: url(../images/content-bg.jpeg)">
+        <header id="branding" role="bammer" style="background-image: url(../images/header-bg.jpeg)">
+          <div class="headertable">
+            <div class="shield">
+              <div class="spin">
+                <img src="../images/shield-spin.jpeg" alt="logo">
+              </div>
+            </div>
+            <div class="grrm-name">
+              <img src="../images/header-2.jpeg" alt="George R. R. Martin Header">
+            </div>
+            <div class="social">
+              <div style="text-align: right; margin: 16px 0 0 0;">
+                <img src="../images/facebook-overall.jpeg">
+                <img src="../images/twitter-overall.jpeg">
+                <img src="../images/app-overall.jpeg">
+              </div>
+              <form id="search" style="background-image: url(../images/search-bg.jpeg);">
+		              <table border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input type="text" name="s" class="textsearch" placeholder="Search" style="width: 145px; margin-right: 5px;">
+                        </td>
+		                      <td>
+                            <input type="image" src="../images/search.jpeg" name="submit" value="Search">
+                          </td>
+                        </tr>
+                      </tbody>
+                  </table>
+	            </form>
+            </div>
+          </div>
 
-    </header>
-    <main>
+          <nav id="access" role="navigation">
+            <h3 class="assistive-text">Main Menu</h3>
+            <div class="skip-link">
+              <a class="assistive-text" href="#content" title="Skip to primary content">
+                Skip to primary content
+              </a>
+            </div>
+            <div class="skip-link">
+              <a class="assistive-text" href="#secondary" title="Skip to secondary content">
+                Skip to secondary content
+              </a>
+            </div>
+            <div class="menu-container">
+              <ul id="menu-grrm" class="menu">
+                <li>Home</li>
+                <li>Not a Blog</li>
+                <li>About George</li>
+                <li>Books</li>
+                <li>For Fans</li>
+                <li>News</li>
+                <li>Merchandise</li>
+              </div>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <main id="main" class="main-sec" style="background-image: url(../images/columns-home.jpeg)">
       <section>
-        <div id="page">
-          <div id="page-grid">
-
+        <div id="imgHead">
+          <img src="../images/GRRM_slide.jpeg" alt="header cover">
+          <div id="pages">
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
           </div>
         </div>
       </section>
