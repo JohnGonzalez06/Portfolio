@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Transitions</title>
+    <style>
+      #transition1 {
+        transition: color 1s;
+      }
+
+      #transition1:hover {
+        color: red;
+      }
+
+      #transition2 {
+        transition-property: transform;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transform-origin: left;
+      }
+
+      #transition2:hover {
+        transform: scale(3);
+      }
+
+      #box {
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        transition:
+          border-radius 2s ease,
+          background-color 2s;
+      }
+
+      #box:hover {
+        background-color: blue;
+        border-radius: 100%;
+      }
+
+      #image {
+        height: 300px;
+        transition:
+          border-radius 1s ease,
+          scale 1s ease,
+          translate 1s,
+          opacity 0.5s;
+      }
+
+      #image:hover {
+        border-radius: 100%;
+        scale: (2);
+        opacity: 0.6;
+        translate: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="transition1">This is a basic transition</h1>
+    <h2 id="transition2">This is another transition</h2>
+    <div id="box"></div>
+    <div>
+      <img id="image" src="../assignments/space_dark.jpeg" alt="space">
+    </div>
+  </body>
+</html>
