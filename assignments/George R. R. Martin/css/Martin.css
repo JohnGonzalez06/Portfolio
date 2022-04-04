@@ -1,0 +1,98 @@
+body {
+  background-color: lightgrey;
+}
+
+h1 {
+  font-family: 'Montaga', serif;
+  font-weight: lighter;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+main {
+  grid-area: blog;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 333px 334px 333px 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas:
+        ". header  header  header  ."
+        ". nav     nav     nav     ."
+        ". banner  banner  banner  ."
+        ". card    card    card    ."
+        ". sidenav blog    blog    ."
+        ". footer  footer  footer  ."
+        ". bottom  bottom  bottom  .";
+}
+
+#shield {
+  background-image: url("../../../images/shield-spin.jpeg");
+  background-position: left top;
+  background-size: cover;
+  height: 75px;
+  width: 65px;
+}
+
+#banner {
+  grid-area: banner;
+  background-image: url("../../../images/GRRM_slide.jpeg");
+  height: 304px;
+  width: 958px;
+}
+
+#card {
+  grid-area: card;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#card img {
+  flex: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+          "header"
+          "nav"
+          "banner"
+          "card"
+          "blog"
+          "sidenav"
+          "footer"
+          "bottom"
+    }
+
+    nav ul {
+      flex-direction: column;
+    }
+
+    #card {
+      flex-direction: column;
+    }
+}
