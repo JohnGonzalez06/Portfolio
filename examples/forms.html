@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms Examples</title>
+    <style>
+      #firstName label,
+      #lastName label {
+        display: block;
+      }
+
+      #firstName {
+        margin-bottom: 12px;
+      }
+
+      #firstName input {
+        border: 0;
+        border-bottom: 2px dashed red;
+        border-radius: 0px;
+        padding: 12px;
+      }
+
+      #firstName input:focus-visible {
+        outline: 0;
+      }
+
+      #lastName input {
+        background-color: skyblue;
+        border: 0;
+        border-radius: 8px;
+        padding: 12px;
+      }
+
+      #lastName input:focus-visible {
+        outline: 0;
+      }
+
+      textarea {
+        font-family: Helvetica;
+        font-size: 16px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h2>Text Inputs</h2>
+      <div id="firstName">
+        <label for="firstNameinput">First Name :</label>
+        <input type="text" id="firstNameinput" name="firstName">
+      </div>
+      <div id="lastName">
+        <label for="lastNameinput">Last Name :</label>
+        <input type="text" id="lastNameinput" name="lastName">
+      </div>
+
+      <h2>Textarea Input</h2>
+      <div>
+        <label for="Areabox">How do you feel about coding?</label>
+        <br>
+        <textarea id="Areabox" style="font-family: Verdana"></textarea>
+      </div>
+
+      <h2>Radio Inputs</h2>
+      <p>What program are you in?</p>
+      <div>
+        <input type="radio" id="raspRad" name="program" value="rasp">
+        <label for="raspRad">Recording Arts and Show Production</label>
+      </div>
+      <div>
+        <input type="radio" id="dfvpRad" name="program" value="dfvp">
+        <label for="dfvpRad">Digital Filmaking and Video Production</label>
+      </div>
+      <div>
+        <input type="radio" id="gdwdRad" name="program" value="gdwd">
+        <label for="gdwdRad">Graphic Design and Web Development</label>
+      </div>
+
+      <h2>Checkbox Input</h2>
+      <p>How do you get to class?</p>
+      <div>
+        <input
+          type="checkbox"
+          id="bikeBox"
+          name="vehicleOption1"
+          value="Bike"
+        >
+        <label for="bikeBox">Bike</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="busBox"
+          name="vehicleOption2"
+          value="Bus"
+        >
+        <label for="busBox">Bus</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="carBox"
+          name="vehicleOption3"
+          value="Car"
+        >
+        <label for="carBox">Car</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="bedBox"
+          name="vehicleOption4"
+          value="Jump out of bed"
+        >
+        <label for="bedBox">Jumping out of bed</label>
+      </div>
+
+      <h2>Date Inputs</h2>
+      <div>
+        <label for="dateID">What is your bday?</label>
+        <input type="date" name="dateID" value="bday">
+      </div>
+
+      <h2>Dropdown (select) Inputs</h2>
+      <div>
+        <label for="foodgroupid">What is your favorite food?</label>
+        <select id="foodgroupid" name="foodgroup">
+          <option value="">Select an option</option>
+          <option value="fruits">Fruits</option>
+          <option value="Vegetables">Vegetables</option>
+          <option value="Grains">Grains</option>
+          <option value="Dairy">Dairy</option>
+        </select>
+      </div>
+
+      <h2>Button Inputs</h2>
+      <div>
+        <input type="button" name="" value="Click Me!">
+        <input type="reset" name="" value="Click to reset">
+        <input type="submit" name="" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 14</title>
+    <style>
+      body {
+        background-image: url(../images/abandoned_building.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h1 {
+        color: limegreen;
+        text-align: center;
+      }
+
+      label {
+        color: white;
+      }
+
+      p {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      fieldset {
+        background-color: rgba(2, 20, 14, 0.6);
+        height: 800px;
+        width: auto;
+        padding: 30px;
+      }
+
+      #account {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      #account div {
+        margin: 40px;
+      }
+
+      #classes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #classes div {
+        margin: 40px;
+      }
+
+      #deploy {
+        text-align: center;
+      }
+
+      #deploy input {
+        border-radius: 10px;
+        box-shadow: 2px 0px 7px 0px;
+        height: 50px;
+        width: 100px;
+        margin: 50px;
+
+      }
+
+      #deploy input:active {
+        box-shadow: inset 2px 0px 7px 0px;
+        background-color: limegreen;
+      }
+
+      .Title {
+        font-size: 50px;
+        text-align: center;
+        font-family: krungthep;
+        color: Limegreen;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <div class="Title">
+        CODE A
+      </div>
+      <form>
+        <h1>Account</h1>
+        <div id="account">
+          <div id="First-Name">
+            <label for="FirstName">First Name</label>
+            <input type="text" id="FirstName" name="firstname">
+          </div>
+          <div id="Last-Name">
+            <label for="LastName">Last Name</label>
+            <input type="text" id="LastName" name="lastname">
+          </div>
+          <div id="Tag-Name">
+            <label for="ProfileTag">Profile</label>
+            <input type="text" id="ProfileTag" name="tag">
+          </div>
+        </div>
+
+        <h1>Class</h1>
+        <p>Choose Your Class</p>
+        <div id="classes">
+          <div id="class-choice">
+            <input type="radio" id="Exterm" name="class" value="Exterminator">
+            <label for="Exterm">The Exterminator / Assault</label>
+          </div>
+          <div>
+            <input type="radio" id="boulder" name="class" value="Boulder">
+            <label for="boulder">The Boulder / Tank</label>
+          </div>
+          <div>
+            <input type="radio" id="bandage" name="class" value="Bandage">
+            <label for="bandage">The Bandage / Healer</label>
+          </div>
+        </div>
+
+        <div id="deploy">
+          <input type="button" name="" value="DEPLOY">
+        </div>
+
+      </form>
+    </fieldset>
+  </body>
+</html>
