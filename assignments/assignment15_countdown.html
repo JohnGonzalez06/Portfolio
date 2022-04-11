@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>FIRST Institute | Graduation Countdown</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+
+      #hero {
+        background-image: url('../images/purple-abstract.jpg');
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 932px;
+      }
+
+      .Grad {
+        color: white;
+        font-size: 46px;
+        font-family: 'helveticaneue', helvetica, sans-serif;
+        font-weight: lighter;
+        z-index: 5;
+      }
+
+      #countdown {
+        display: inline-block;
+      }
+
+      #hero h1 {
+        font-family: sans-serif;
+        color: white;
+        font-size: 64px;
+        font-weight: bold;
+      }
+
+      #logo img {
+        height: 500px;
+        margin-top: 0px;
+      }
+
+      @media screen and (max-width: 720px) {
+        .Grad {
+          font-size: 32px;
+        }
+
+        #hero h1 {
+          font-size: 56px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="hero">
+      <h1 class="Grad">FIRST Institute</h1>
+      <h2 class="Grad">GRADUATION DAY</h2>
+      <h3 class="Grad" id="countdown">Placeholder</h3>
+      <div id="logo">
+        <img src="../images/Illustrator/Spider-man_Medium.jpeg" alt="Spiderman">
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      let deadline = new Date('July 22, 2022 16:30:00');
+
+      function setCountdown() {
+        let now = new Date();
+
+        let timeLeft = deadline.getTime() - now.getTime();
+
+        let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor(
+          (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        var seconds = Math.floor(
+          (timeLeft % (1000 * 60)) / 1000
+        );
+
+        document.getElementById("countdown").innerHTML =
+          days + " DAYS " + hours + " HRS " + minutes + " MIN "
+            + seconds + " SEC ";
+      }
+
+      setInterval(setCountdown, 1000);
+    </script>
+  </body>
+</html>
