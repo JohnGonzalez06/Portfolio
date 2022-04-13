@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 15 - JS Slideshow</title>
+    <link
+    type="text/css"
+    href="../css/A-15-Slide.css"
+    rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div id="slide">
+      <img id="slide1" src="../images/Illustrator/ClaireDavis_Medium.jpeg" class="slideshowImg">
+      <img id="slide2" src="../images/Illustrator/FreshProduce_Logo_Medium.png" class="slideshowImg">
+      <img id="slide3" src="../images/Illustrator/Neofit_Medium.jpeg" class="slideshowImg">
+      <img id="slide4" src="../images/Illustrator/Rebound_Medium.jpeg" class="slideshowImg">
+      <img id="slide5" src="../images/Illustrator/WoC_Logo_Medium.png" class="slideshowImg">
+    </div>
+
+    <div id="buttons">
+      <input
+        type="button"
+        id="previous"
+        value="Previous"
+        onclick="showPreviousSlide()"
+      >
+      <input
+        type="button"
+        id="next"
+        value="Next"
+        onclick="showNextSlide()"
+      >
+    </div>
+
+    <script type="text/javascript" src="../js/A-15-Slide.js"></script>
+  </body>
+</html>
