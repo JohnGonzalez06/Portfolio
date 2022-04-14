@@ -30,6 +30,9 @@
         align-items: center;
         justify-content: center;
       }
+      .trigger-obj:hover {
+        cursor: pointer;
+      }
       #obj-bg {
         background: radial-gradient(#ff7788 10%, red 40%, #440000 80%);
         border-radius: 100%;
@@ -56,14 +59,36 @@
         display: flex;
       }
       #popup {
+        position: relative;
+        z-index: 1;
+        text-align: center;
 
       }
-
+      #popup #thx {
+        font-size: 32px;
+        font-family: verdana, sans-serif;
+        font-weight: bold;
+        color: black;
+      }
       #popup .closePopup {
-        margin-top: 35px
+        margin-top: 35px;
+        font-size: 24px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        color: red;
+      }
+      .closePopup:hover {
+        cursor: none;
       }
       #pop-bg {
-
+        background-image: url('../images/bird.gif');
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
       }
     </style>
   </head>
@@ -79,13 +104,22 @@
     <div id="pop-container">
       <div id="pop-bg"></div>
       <div id="popup">
-        <div>Thank You</div>
+        <div id="thx">Thank You</div>
         <div class="closePopup">Dont click this</div>
       </div>
     </div>
 
     <script type="text/javascript">
-
+      $('.trigger-obj').click(
+        function() {
+          $('#pop-container').addClass('openPopup');
+        }
+      );
+      $('.closePopup').click(
+        function() {
+          $('#pop-container').removeClass('openPopup');
+        }
+      );
     </script>
   </body>
 </html>
