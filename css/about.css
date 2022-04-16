@@ -1,0 +1,289 @@
+@media screen and (min-width: 599px) {
+  #nav_bar ul {
+    color: white;
+    background: #232328;
+    box-shadow: 0px 2px 0px 0px #ffcc00;
+    padding-inline-start: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  #nav_bar ul li {
+    display: inline-block;
+    padding: 12px 24px;
+  }
+
+  #nav_bar {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+  }
+
+  .left_link {
+    list-style-type: none;
+  }
+
+  #logo {
+    color: #ffcc00;
+    font-size: 32px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 35%;
+  }
+
+  .right_link {
+    list-style-type: none;
+    float: right;
+  }
+
+  #current {
+    color: #ffcc00;
+  }
+
+  .title {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 48px;
+    font-family: times;
+    font-weight: lighter;
+    margin: auto;
+    padding-top: 60px;
+  }
+
+  .Para_card {
+    background-color: #232328;
+    border: 1px solid #ffcc00;
+    color: white;
+    font-size: 16px;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    padding-right: 20px;
+    margin: 40px;
+  }
+
+  .cardTitle {
+    font-weight: 200;
+    font-size: 32px;
+    color: rgba(0, 153, 153, 1);
+  }
+
+  #about_cards {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    font-family: times;
+  }
+
+  header {
+    font-family: times;
+  }
+
+  body {
+    margin: 0px;
+    background-image: url('../Space_Background.jpg');
+    background-size: 1920px 1080px;
+  }
+
+  .footer {
+    border-top: 2px solid #ffcc00;
+    background-color: #232328;
+    color: #ffcc00;
+    width: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+        "head head head"
+        "Line1-1 Line1-2 Line1-3"
+        "Line2-1 Line2-2 Line2-3"
+        "Line3-1 Line3-2 Line3-3"
+        "Contact Contact2 Contact3"
+        "Copyright Copyright2 Copyright3";
+    gap: 10px 30px;
+  }
+
+  #head {
+    grid-area: head;
+    font-size: 24px;
+    border-bottom: 1px solid #232328;
+  }
+  #row1 {
+    grid-area: Line1-1;
+  }
+  #row2 {
+    grid-area: Line2-1;
+  }
+  #row3 {
+    grid-area: Line3-1;
+  }
+  #row1-2 {
+    grid-area: Line1-2;
+  }
+  #row2-2 {
+    grid-area: Line2-2;
+  }
+  #phone {
+    grid-area: Contact2;
+  }
+  #email {
+    grid-area: Contact;
+  }
+  #insta {
+    grid-area: Contact3;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #nav_bar ul {
+    color: white;
+    background: #232328;
+    box-shadow: 0px 2px 0px 0px #ffcc00;
+    padding-inline-start: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  #nav_bar ul li {
+    display: inline-block;
+    padding: 12px 24px;
+  }
+
+  #nav_bar {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+  }
+
+  .left_link {
+    list-style-type: none;
+  }
+
+  #logo {
+    color: #ffcc00;
+    font-size: 32px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 35%;
+  }
+
+  .right_link {
+    list-style-type: none;
+    float: right;
+  }
+
+  #current {
+    color: #ffcc00;
+  }
+
+  .title {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 48px;
+    font-family: times;
+    font-weight: lighter;
+    margin: auto;
+    padding-top: 40px;
+  }
+
+  .Para_card {
+    background-color: #232328;
+    border: 1px solid #ffcc00;
+    color: white;
+    font-size: 14px;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    padding-right: 20px;
+    margin: 40px;
+  }
+
+  .cardTitle {
+    font-weight: 200;
+    font-size: 32px;
+    color: rgba(0, 153, 153, 1);
+  }
+
+  #about_cards {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    font-family: times;
+  }
+
+  header {
+    font-family: times;
+  }
+
+  body {
+    margin: 0px;
+    background-image: url("../Space_Background.jpg");
+    background-size: 1920px 1080px;
+  }
+
+  .footer {
+    border-top: 2px solid #ffcc00;
+    background-color: #232328;
+    color: #ffcc00;
+    width: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+        "head head head"
+        "Line1-1 Line1-2 Line1-3"
+        "Line2-1 Line2-2 Line2-3"
+        "Line3-1 Line3-2 Line3-3"
+        "Contact Contact2 Contact3"
+        "Copyright Copyright2 Copyright3";
+    gap: 10px 30px;
+  }
+
+  #head {
+    grid-area: head;
+    font-size: 24px;
+    border-bottom: 1px solid #232328;
+  }
+  #row1 {
+    grid-area: Line1-1;
+  }
+  #row2 {
+    grid-area: Line2-1;
+  }
+  #row3 {
+    grid-area: Line3-1;
+  }
+  #row1-2 {
+    grid-area: Line1-2;
+  }
+  #row2-2 {
+    grid-area: Line2-2;
+  }
+  #phone {
+    grid-area: Contact2;
+  }
+  #email {
+    grid-area: Contact;
+  }
+  #insta {
+    grid-area: Contact3;
+  }
+}

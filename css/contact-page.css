@@ -171,7 +171,7 @@ body {
       "Line3-1 Line3-2 Line3-3"
       "Contact Contact2 Contact3"
       "Copyright Copyright2 Copyright3";
-  gap: 10px 10px;
+  gap: 10px 30px;
 }
 
 #head {
@@ -243,9 +243,8 @@ body {
   }
 
   .footer {
-    gap: 10px 10px;
+    gap: 10px 30px;
     padding: 20px;
-    font-size: 12px;
     grid-template-columns: 1fr 1fr 2fr;
   }
 

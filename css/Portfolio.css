@@ -1,7 +1,6 @@
 .gallery_pages {
   padding: 0px;
 }
-
 .examples_title {
   background-color: #232328;
   border-top: 2px solid #ffcc00;
@@ -34,7 +33,7 @@
   border: 1px solid; padding: 10px;
   font-size: 24px;
   width: auto;
-  margin: 30px;
+  margin: 10px;
   list-style: outside none none;
 }
 
@@ -77,7 +76,21 @@
 }
 
 .grid_image img:hover {
-  transform: scale(1.5);
+  transform: scale(1.4);
+}
+
+.no_shadow img {
+  height: 350px;
+  margin: 20px;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transform-origin: center;
+}
+
+.no_shadow img:hover {
+  transform: scale(1.2);
 }
 
 #current {
@@ -155,7 +168,7 @@ body {
       "Line3-1 Line3-2 Line3-3"
       "Contact Contact2 Contact3"
       "Copyright Copyright2 Copyright3";
-  gap: 10px 10px;
+  gap: 10px 30px;
 }
 
 #head {
@@ -194,13 +207,13 @@ body {
     padding: 60px;
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   #selected {
     font-size: 18px;
+    margin: 10px;
   }
 
   #logo {
@@ -227,6 +240,10 @@ body {
     transform-origin: center;
   }
 
+  .grid_image img:hover {
+    transform: scale(1.4);
+  }
+
 
   #I_Block {
     background: #232328;
@@ -248,4 +265,26 @@ body {
     font-family: helveticaneue;
   }
 
+  .footer {
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 10px 30px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .grid_image img:hover {
+    transform: scale(1.2);
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "head head head"
+        "Line1-1 Line1-2 Line1-3"
+        "Line2-1 Line2-2 Line2-3"
+        "Line3-1 Line3-2 Line3-3"
+        "Contact Contact2 Contact3"
+        "Copyright Copyright2 Copyright3";
+    gap: 10px 30px;
 }
