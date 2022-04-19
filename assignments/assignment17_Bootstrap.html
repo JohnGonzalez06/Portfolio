@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Assignment 17</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
+
+    <style>
+      .row > div {
+        background-color: aquamarine;
+        border: 1px dashed black;
+        padding: 10px;
+      }
+      #modalButton {
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        width: auto;
+      }
+      #button-sec {
+        text-align: center;
+        padding: 30px 10px 30px 10px;
+        background-color: snow;
+        box-shadow: 2px 2px 8px 1px silver;
+        background-position: center;
+        height: 50%;
+        width: 50%;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Assignment 17</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col-sm-4">1</div>
+        <div class="col-sm-4">2</div>
+        <div class="col-sm-4">3</div>
+      </div>
+      <div class="row">
+        <div class="col-2">A</div>
+        <div class="col-4">B</div>
+        <div class="col-6">C</div>
+      </div>
+      <div class="row">
+        <div class="col-7">Yes</div>
+        <div class="col-3">No</div>
+        <div class="col-2">Maybe</div>
+      </div>
+      <div class="row">
+        <div class="col-3">Who?</div>
+        <div class="col-3">What?</div>
+        <div class="col-6">Where?</div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="button-sec">
+      <button
+        id="modalButton"
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modalStatic">
+          Click For Modal
+      </button>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalStatic"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      aria-labelledby="modalStaicLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="modalStaicLabel">Modal Title</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>text goes here...</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">Close</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous">
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', function () {
+      myInput.focus()
+      })
+    </script>
+  </body>
+</html>
