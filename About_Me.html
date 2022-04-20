@@ -3,32 +3,40 @@
   <head>
     <title>Gemini Artworks About</title>
     <link type="text/css" rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   </head>
   <body>
 
     <header>
-        <nav id="nav_bar">
-            <ul>
-              <div id="logo">
-                Gemini Artworks
-              </div>
-              <li class="left_link">
-                <a href="index.html" style="text-decoration: none; color: white;">
-                Home
-                </a>
-              </li>
-              <li class="right_link" id="current">
-                About Me
-              </li>
-              <li class="right_link">
-                <a href="Contact_Page.html" style="text-decoration: none; color: white;">
-                Contact
-                </a>
-              </li>
-            </ul>
-        </nav>
-        <br><br><br><br>
-        <h1 class="title">About Me</h1>
+      <nav id="nav_bar">
+        <div id="nav_whole">
+          <div id="logo">
+            Gemini Artworks
+          </div>
+          <div class="active">
+            <a href="index.html" style="text-decoration: none; color: white;">
+              Home
+            </a>
+          </div>
+          <div id="nav_links">
+            <div class="right_link" id="current">
+              About Me
+            </div>
+            <div class="right_link">
+              <a href="Contact_Page.html" style="text-decoration: none; color: white;">
+              Contact
+              </a>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+      <br><br><br>
+      <h1 class="title">About Me</h1>
     </header>
 
     <main>
@@ -131,5 +139,8 @@
         </div>
       </div>
     </footer>
+
+
+    <script type="text/javascript" src="js/menu_external.js"></script>
   </body>
 </html>

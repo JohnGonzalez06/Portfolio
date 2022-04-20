@@ -1,28 +1,74 @@
-#nav_bar ul {
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav_whole {
   color: white;
   background: #232328;
-  box-shadow: 0px 2px 0px 0px #ffcc00;
+  border-bottom: 1px solid #ffcc00;
   padding-inline-start: 0px;
   margin-top: 0px;
   font-size: 20px;
+  padding: 10px;
+  padding-left: 20px;
 }
 
-#nav_bar ul li {
-  display: inline-block;
-  padding: 12px 24px;
+#nav_links {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: baseline;
+  right: 0;
+  top: 0px;
+  padding: 10px 20px;
 }
 
 #nav_bar {
-  position: relative;
-  top: 0px;
-  margin-bottom: 50px;
+  position: fixed;
   z-index: 5;
   width: 100%;
 }
 
+.right_link {
+  margin-left: 25px;
+}
 
-.left_link {
-  list-style-type: none;
+@keyframes toGrey {
+  0% {
+    background-color: #232328;
+    transition-timing-function: ease;
+  }
+  100% {
+    background-color: dimgrey;
+    padding: 10px;
+    transition-timing-function: ease;
+  }
+}
+
+#selection1 {
+  position: relative;
+}
+
+#selection2 {
+  position: relative;
+}
+
+#selection1 a:hover {
+  animation: toGrey 2s 1;
+}
+
+#selection2 a:hover {
+  animation: toGrey 2s 1;
+}
+
+.icon {
+  display: none;
 }
 
 #logo {
@@ -31,12 +77,11 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 22px;
 }
 
-.right_link {
-  list-style-type: none;
-  float: right;
+#current {
+  color: #ffcc00;
 }
 
 #current {
@@ -64,21 +109,22 @@ body {
   color: white;
   width: 50%;
   margin: auto;
+  margin-top: 30px;
   padding: 25px;
   box-sizing: border-box;
   margin-bottom: 50px;
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(30px, auto);
   grid-template-areas:
-      ". head    head   ."
-      ". message message ."
-      ". name    name    ."
-      ". email   email   ."
-      ". phone   phone   ."
-      ". comment comment ."
-      ". submit  submit  ."
+      ". head    ."
+      ". message ."
+      ". name    ."
+      ". email   ."
+      ". phone   ."
+      ". comment ."
+      ". submit  ."
 }
 
 #contact-grid p {
@@ -130,7 +176,7 @@ body {
   }
 }
 
-#submitButton input:hover {
+#submitButton input:active {
   animation: submitColor 0.5s;
 }
 
@@ -167,7 +213,7 @@ body {
   margin-top: 10px;
   margin-bottom: 30px;
   height: 156px;
-  width: 100%;
+  width: auto;
 }
 
 .footer {
@@ -175,7 +221,7 @@ body {
   border-top: 2px solid #ffcc00;
   font-size: 14px;
   color: #ffcc00;
-  width: 95%;
+  width: 100%;
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 3fr;
@@ -227,7 +273,7 @@ body {
   }
 
   #comment textarea {
-    width: 95%;
+    width: auto;
   }
 
   #contact-grid {
@@ -242,7 +288,7 @@ body {
   }
 
   #comment textarea {
-    width: 95%;
+    width: auto;
   }
 
   #contact-grid {
@@ -308,7 +354,68 @@ body {
   }
 
   #comment textarea {
-    width: 95%;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #contact-grid {
+    margin-top: 30px;
   }
 
+  #current {
+    padding-left: 20px;
+  }
+
+  #nav_whole {
+    background: #232328;
+    border-bottom: 1px solid #ffcc00;
+    padding-inline-start: 0px;
+    margin-top: 0px;
+  }
+
+  #nav_bar a {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline;
+  }
+
+  #nav_bar a:hover {
+    background-color: dimgrey;
+  }
+
+  .active {
+    background-color: #232328;
+    color: white;
+  }
+
+  #nav_bar a.icon {
+    background: #232328;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: auto;
+    width: auto;
+  }
+
+  #nav_bar a.icon:active {
+    background: dimgrey;
+  }
+
+  #nav_links {
+    display: none;
+    padding: 10px 30px;
+  }
+
+  #nav_bar {
+    overflow: hidden;
+    position: fixed;
+  }
+
+  .right_link {
+    font-size: 20px;
+    margin-right: 10px;
+  }
 }

@@ -3,112 +3,122 @@
   <head>
     <title>Gemini Artworks Contact</title>
     <link rel="stylesheet" href="css/contact-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   </head>
   <body>
-
     <header>
-        <nav id="nav_bar">
-            <ul>
-              <div id="logo">
-                Gemini Artworks
-              </div>
-              <li class="left_link">
-                <a href="index.html" style="text-decoration: none; color: white;">
-                Home
-                </a>
-              </li>
-              <li class="right_link">
-                <a href="About_Me.html" style="text-decoration: none; color: white;">
-                About Me
-                </a>
-              </li>
-              <li class="right_link" id="current">
-                Contact
-              </li>
-            </ul>
-        </nav>
-    </header>
-
-        <main>
-          <section id="contact-grid">
-            <h1 style="grid-area: head; font-size: 32px;">Contact</h1>
-            <p style="grid-area: message;">
-              Any questions, comments, or requests? Send me a message along with
-              a way to contact you so that I may respond when I am available.
-            </p>
-            <div class="Input" id="Nameinput">
-              <label for="Nameinput">Name -</label>
-              <input type="text" id="NInput" name="Name">
+      <nav id="nav_bar">
+        <div id="nav_whole">
+          <div id="logo">
+            Gemini Artworks
+          </div>
+          <div class="active" id="selection1">
+            <a href="index.html" style="text-decoration: none; color: white;">
+              Home
+            </a>
+          </div>
+          <div id="nav_links">
+            <div class="right_link" id="selection2">
+              <a href="About_Me.html" style="text-decoration: none; color: white;">
+              About Me
+              </a>
             </div>
-            <div class="Input" id="Emailinput">
-              <label for="Nameinput">Email -</label>
-              <input type="text" id="EInput" name="Email">
-            </div>
-            <div class="Input" id="Phoneinput">
-              <label for="Nameinput">Phone -</label>
-              <input type="text" id="PInput" name="Phone">
-            </div>
-            <div id="comment">
-              <label for="Comment">Comment</label>
-              <br>
-              <textarea id="Comment" style="font-family: 'helveticaneue'"></textarea>
-            </div>
-            <div id="submitButton">
-              <input type="submit" name="submit" value="SUBMIT">
-            </div>
-          </section>
-        </main>
-
-        <footer>
-          <div>
-            <div class="footer">
-              <div id="head">
-                Gemini Artworks
-              </div>
-              <div id="row1">
-                Gallery -
-                <a href="HomeIllustrator.html"
-                style="text-decoration: none;
-                color: white;">
-                  Illustrator
-                </a>
-              </div>
-              <div id="row2">
-                Gallery -
-                <a href="HomePhotoshop.html"
-                style="text-decoration: none;
-                color: white;">
-                  Photoshop
-                </a>
-              </div>
-              <div id="row3">
-                Gallery -
-                <a href="HomeIndesign.html"
-                style="text-decoration: none;
-                color: white;">
-                  Indesign
-                </a>
-              </div>
-              <div id="row1-2">
-                <a href="Contact_Page.html"
-                style="text-decoration: none;
-                color: white;">
-                  Contact
-                </a>
-              </div>
-              <div id="row2-2">
-                <a href="About_Me.html"
-                style="text-decoration: none;
-                color: white;">
-                  About Me
-                </a>
-              </div>
-              <div id="phone">407-652-8646</div>
-              <div id="email">gonzalezjohnathan8541@gmail.com</div>
-              <div id="insta">@_gemini.artworks</div>
+            <div class="right_link" id="current">
+              Contact
             </div>
           </div>
-        </footer>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <br><br><br>
+      <section id="contact-grid">
+        <h1 style="grid-area: head; font-size: 32px;">Contact</h1>
+        <p style="grid-area: message;">
+          Any questions, comments, or requests? Send me a message along with
+          a way to contact you so that I may respond when I am available.
+        </p>
+        <div class="Input" id="Nameinput">
+          <label for="Nameinput">Name -</label>
+          <input type="text" id="NInput" name="Name">
+        </div>
+        <div class="Input" id="Emailinput">
+          <label for="Nameinput">Email -</label>
+          <input type="text" id="EInput" name="Email">
+        </div>
+        <div class="Input" id="Phoneinput">
+          <label for="Nameinput">Phone -</label>
+          <input type="text" id="PInput" name="Phone">
+        </div>
+        <div id="comment">
+          <label for="Comment">Comment</label>
+          <br>
+          <textarea id="Comment" style="font-family: 'helveticaneue'"></textarea>
+        </div>
+        <div id="submitButton">
+          <input type="submit" name="submit" value="SUBMIT">
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <div class="footer">
+          <div id="head">
+            Gemini Artworks
+          </div>
+          <div id="row1">
+            Gallery -
+            <a href="HomeIllustrator.html"
+            style="text-decoration: none;
+            color: white;">
+              Illustrator
+            </a>
+          </div>
+          <div id="row2">
+            Gallery -
+            <a href="HomePhotoshop.html"
+            style="text-decoration: none;
+            color: white;">
+              Photoshop
+            </a>
+          </div>
+          <div id="row3">
+            Gallery -
+            <a href="HomeIndesign.html"
+            style="text-decoration: none;
+            color: white;">
+              Indesign
+            </a>
+          </div>
+          <div id="row1-2">
+            <a href="Contact_Page.html"
+            style="text-decoration: none;
+            color: white;">
+              Contact
+            </a>
+          </div>
+          <div id="row2-2">
+            <a href="About_Me.html"
+            style="text-decoration: none;
+            color: white;">
+              About Me
+            </a>
+          </div>
+          <div id="phone">407-652-8646</div>
+          <div id="email">gonzalezjohnathan8541@gmail.com</div>
+          <div id="insta">@_gemini.artworks</div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script type="text/javascript" src="js/menu_external.js"></script>
   </body>
 </html>

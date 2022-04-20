@@ -3,29 +3,36 @@
   <head>
     <title>Portfolio</title>
     <link type="text/css" rel="stylesheet" href="css/Portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
   <!-- Portfolio title -->
   <header>
-      <nav id="nav_bar">
-          <ul>
-            <div id="logo">
-              Gemini Artworks
-            </div>
-            <li class="left_link" id="current">Home</li>
-            <li class="right_link">
-              <a href="About_Me.html" style="text-decoration: none; color: white;">
-              About Me
-              </a>
-            </li>
-            <li class="right_link">
-              <a href="Contact_Page.html" style="text-decoration: none; color: white;">
-              Contact
-              </a>
-            </li>
-          </ul>
-      </nav>
+    <nav id="nav_bar">
+      <div id="nav_whole">
+        <div id="logo">
+          Gemini Artworks
+        </div>
+        <div class="active" id="current">Home</div>
+        <div id="nav_links">
+          <div class="right_link" id="selection1">
+            <a href="About_Me.html" style="text-decoration: none; color: white;">
+            About Me
+            </a>
+          </div>
+          <div class="right_link" id="selection2">
+            <a href="Contact_Page.html" style="text-decoration: none; color: white;">
+            Contact
+            </a>
+          </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -187,5 +194,8 @@
         </div>
       </div>
     </footer>
+
+
+    <script type="text/javascript" src="js/menu_external.js"></script>
   </body>
 </html>
