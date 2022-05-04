@@ -77,11 +77,19 @@
   position: relative;
 }
 
+#selction3 {
+  position: relative;
+}
+
 #selection1 a:hover {
   animation: toGrey 2s 1;
 }
 
 #selection2 a:hover {
+  animation: toGrey 2s 1;
+}
+
+#selection3 a:hover {
   animation: toGrey 2s 1;
 }
 
@@ -132,6 +140,7 @@
 
 #current {
   color: #ffcc00;
+  margin-left: 20px;
 }
 
 #I_Block {
@@ -173,7 +182,7 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: baseline;
-  right: 0;
+  right: 0px;
   top: 0px;
   padding: 10px 20px;
 }
@@ -185,7 +194,7 @@
 }
 
 .right_link {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .icon {
